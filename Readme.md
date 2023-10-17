@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Елена Гореликова](https://up.htmlacademy.ru/htmlcss-individual/1/user/1527977).
-* Наставник: `Неизвестно`.
+* Наставник: `Ярослав Шевцов` (https://htmlacademy.ru/profile/redx).
 
 ---
 
