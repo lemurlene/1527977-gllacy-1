@@ -9,18 +9,21 @@
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo logo logo--disabled" aria-current="page">
+        <svg class="logo__img" width="137" height="56" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#gllacy"></use>
+        </svg>
         <span class="visually-hidden">
           Логотип Глейси
         </span>
-        <svg class="logo__img" width="137" height="56" aria-hidden="true">
-          <use xlink:href=""></use>
-        </svg>
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">
               Каталог
+              <svg class="main-nav__link-icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#arrow-down"></use>
+              </svg>
             </a>
           </li>
           <li class="main-nav__item">
@@ -40,21 +43,27 @@
         <ul class="main-nav__list user-nav">
           <li class="user-nav__item search">
             <a class="user-nav__link" href="#">
+              <svg class="search__icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
               <span class="visually-hidden">
                 Поиск
               </span>
-              <svg class="search__icon" width="13" height="13" aria-hidden="true">
-                <use xlink:href="#"></use>
-              </svg>
             </a>
           </li>
           <li class="user-nav__item entry">
             <a class="user-nav__link" href="#">
+              <svg class="entry__icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#entry"></use>
+              </svg>
               Вход
             </a>
           </li>
           <li class="user-nav__item cart">
             <a class="user-nav__link" href="#">
+              <svg class="cart__icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg>
               <span class="visually-hidden">
                 Корзина
               </span>
@@ -78,7 +87,7 @@
             <a class="button hero__button" href="catalog.html">
               Заказать
             </a>
-            <img class="hero__img" src=""
+            <img class="hero__img" src="images/slider/main-strawberry.png" width="350" height="510"
             alt="Вариант сервировки: шарик красного мороженого и белого с клубничным топпингом в вафельном рожке.">
           </li>
           <li class="hero__item slide slide--2">
@@ -90,7 +99,7 @@
             <a class="button hero__button" href="catalog.html">
               Заказать
             </a>
-            <img class="hero__img" src=""
+            <img class="hero__img" src="images/slider/main-banana.png" width="350" height="510"
             alt="Вариант сервировки: три шарика жёлтого мороженого в вафельном рожке.">
           </li>
           <li class="hero__item slide slide--2">
@@ -102,7 +111,7 @@
             <a class="button hero__button" href="catalog.html">
               Заказать
             </a>
-            <img class="hero__img" src=""
+            <img class="hero__img" src="images/slider/main-caramel.png" width="350" height="510"
             alt="Вариант сервировки: четыре шарика кремового мороженого с зефирной посыпкой в вафельном рожке.">
           </li>
         </ol>
@@ -110,8 +119,14 @@
           <span class="visually-hidden">
             Предыдущее фото
           </span>
+          <svg class="slider__toggle" width="38" height="38" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#arrow-left"></use>
+          </svg>
         </button>
         <button class="slider__button slider__button--next" type="button">
+          <svg class="slider__toggle" width="38" height="38" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#arrow-right"></use>
+          </svg>
           <span class="visually-hidden">
             Следующее фото
           </span>
@@ -171,7 +186,7 @@
       <section class="gifts">
         <h2>Заказывайте мороженое и получайте подарки!</h2>
         <ul class="gifts__list">
-          <li class="gifts__item">
+          <li class="gifts__item gifts__item--raspberry">
             <h3>Малинка даром!</h3>
             <p>
               При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
@@ -179,8 +194,9 @@
             <a class="button gifts__button" href="catalog.html">
               Хочу подарок
             </a>
+            <img class="gifts__img" src="images/illustrations/gifts-raspberry.png" width="219" height="268" alt="" aria-hidden="true">
           </li>
-          <li class="gifts__item">
+          <li class="gifts__item gifts__item--marshmallow">
             <h3>Маршмеллоу даром!</h3>
             <p>
               При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
@@ -188,20 +204,17 @@
             <a class="button gifts__button" href="catalog.html">
               Хочу подарок
             </a>
+            <img class="gifts__img" src="images/illustrations/gifts-marshmallow.png" width="219" height="268" alt="" aria-hidden="true">
           </li>
         </ul>
       </section>
       <section class="products products--popular">
         <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="products__list">
-          <!--
-            В карточках товаров обернула картинку и заголовок в ссылку, как в "Барбершопе".
-            Оставить или лучше без самодеятельности в проекте?=)
-          -->
           <li class="products__item">
             <article class="product">
               <a class="product__link" href="#">
-                <img class="product__image" src="#"
+                <img class="product__image" src="images/products/raspberry.jpg"
                 alt="Шарик малинового цвета">
                 <h3 class="product__title">Малинка</h3>
               </a>
@@ -212,6 +225,9 @@
                 310 ₽/кг
               </b>
               <a class="product__button button" href="#">
+                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
                 <span class="visually-hidden">
                   Положить в корзину
                 </span>
@@ -221,7 +237,7 @@
           <li class="products__item">
             <article class="product">
               <a class="product__link" href="#">
-                <img class="product__image" src="#"
+                <img class="product__image" src="images/products/pistachio.jpg"
                 alt="Шарик фисташкового цвета с шоколадными капельками">
                 <h3 class="product__title">Фисташка</h3>
               </a>
@@ -232,6 +248,9 @@
                 340 ₽/кг
               </b>
               <a class="product__button button" href="#">
+                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
                 <span class="visually-hidden">
                   Положить в корзину
                 </span>
@@ -241,7 +260,7 @@
           <li class="products__item">
             <article class="product">
               <a class="product__link" href="#">
-                <img class="product__image" src="#"
+                <img class="product__image" src="images/products/blueberries.jpg"
                 alt="Шарик кремового цвета с черничными прожилками">
                 <h3 class="product__title">Черника</h3>
               </a>
@@ -252,6 +271,9 @@
                 330 ₽/кг
               </b>
               <a class="product__button button" href="#">
+                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
                 <span class="visually-hidden">
                   Положить в корзину
                 </span>
@@ -261,7 +283,7 @@
           <li class="products__item">
             <article class="product">
               <a class="product__link" href="#">
-                <img class="product__image" src="#"
+                <img class="product__image" src="images/products/bubble-gum.jpg"
                 alt="Шарик бирюзового цвета с разноцветными горошинками">
                 <h3 class="product__title">Бабл-гам</h3>
               </a>
@@ -272,6 +294,9 @@
                 320 ₽/кг
               </b>
               <a class="product__button button" href="#">
+                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
                 <span class="visually-hidden">
                   Положить в корзину
                 </span>
@@ -304,7 +329,7 @@
           </li>
         </ul>
       </section>
-      <aside>
+      <aside class="blogs-news">
         <h2>Новое в нашем блоге</h2>
         <a href="#">
           <h3>10 способов сервировки фруктовых щербетов к столу</h3>
@@ -378,12 +403,6 @@
     </main>
     <footer class="page-footer">
       <section class="social">
-      <!--
-        Переиспользовала блок с соцсетями из футера-героя(143 стр.), но там заголовок был <h3>,
-        здесь исправила на <h2>, т.к он visually-hidden думаю это допустимо.
-        Но вот на будущее, подскажи, пожалуйста,
-        кроме возможных дополнений в стилизации, это ничем не чревато? так можно делать?
-      -->
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
