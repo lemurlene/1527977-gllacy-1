@@ -160,21 +160,21 @@
             <h3 class="visually-hidden">Мы в соцсетях</h3>
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__button button button__link" href="https://t.me/htmlacademy" target="_blank">
+                <a class="social__button button" href="https://t.me/htmlacademy" target="_blank">
                   <span class="visually-hidden">
                     Телеграмм
                   </span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__button button button__link" href="https://vk.com/htmlacademy" target="_blank">
+                <a class="social__button button" href="https://vk.com/htmlacademy" target="_blank">
                   <span class="visually-hidden">
                     Вконтакте
                   </span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__button button button__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+                <a class="social__button button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                   <span class="visually-hidden">
                     Ютуб
                   </span>
@@ -215,6 +215,8 @@
           <li class="products__item">
             <article class="product">
               <a class="block__link" href="#">
+                <!-- Обернула картинку и заголовок в ссылку, как в "Барбершопе".
+                Оставить или лучше без самодеятельности в проекте? -->
                 <img class="product__image" src="images/products/raspberry.jpg"
                 alt="Шарик малинового цвета">
                 <h3 class="block__h4">Малинка</h3>
@@ -414,6 +416,11 @@
     <footer class="page-footer">
       <section class="social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <!-- Переиспользовала блок с соцсетями из футера-героя(159 стр.),
+        но там заголовок был <h3>, здесь исправила на <h2>,
+        т.к он visually-hidden думаю это допустимо.
+        Но вот на будущее, подскажи, пожалуйста, кроме возможных дополнений в стилизации,
+         это ничем не чревато? так можно делать? -->
         <ul class="social__list">
           <li class="social__item">
             <a class="social__button button" href="https://t.me/htmlacademy" target="_blank">
