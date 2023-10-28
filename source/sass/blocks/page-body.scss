@@ -1,0 +1,24 @@
+.page-body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-dark;
+  background-color: $special-light;
+  width: $desktop-width;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 98px;
+  padding-left: 98px;
+}
+
+.page-body__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  width: $desktop-width;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 98px;
+  padding-left: 98px;
+}

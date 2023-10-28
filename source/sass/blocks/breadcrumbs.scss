@@ -1,0 +1,10 @@
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $basic-extra-dark;
+}
+
+.breadcrumbs__link--current {
+  text-decoration: underline solid 1px;
+}

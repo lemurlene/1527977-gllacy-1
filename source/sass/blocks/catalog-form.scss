@@ -1,0 +1,10 @@
+.catalog-form {
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-extra-dark;
+}
+
+.catalog-form__item {
+  background-color: rgba($basic-extra-light, 0.3);
+  text-transform: lowercase;
+}

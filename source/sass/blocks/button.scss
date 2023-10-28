@@ -1,0 +1,16 @@
+.button {
+  font-family: inherit;
+  line-height: 20px;
+  font-weight: 700;
+  color: $basic-extra-dark;
+  background-color: $basic-extra-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button--color {
+  background-color: $special-extra-bright;
+  color: $basic-extra-light;
+}

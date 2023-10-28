@@ -1,0 +1,30 @@
+.contacts {
+  background-image: url("../../images/background/contacts.jpg");
+}
+
+.contacts__container {
+  background-color: $basic-extra-light;
+  max-width: 343px;
+  min-height: 364px;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.contacts__info {
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic-extra-dark;
+  font-weight: 700;
+}
+
+.contacts__info--address {
+  font-style: normal;
+}
+
+.contacts__info--phone {
+  display: block;
+}

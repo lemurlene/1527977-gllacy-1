@@ -1,0 +1,11 @@
+.product {
+  text-align: center;
+  background-color: $basic-extra-light;
+}
+
+.product__image {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  box-shadow: rgba($basic-extra-dark, 0.1) 0 4px 12px;
+}
