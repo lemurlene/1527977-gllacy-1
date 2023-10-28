@@ -2,10 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="мороженое, сливочное, на развес, магазин, онлайн, щербет, фруктовый лёд, мелорин">
     <meta name="description" content="мороженое онлайн-магазин офлайн-магазин">
     <title>HTML Academy: Глейси - Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon/152.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicon/16.png">
+    <link rel="apple-touch-icon" href="images/favicon/32.png">
   </head>
   <body class="page-body page-wrapper">
     <header class="page-header">
@@ -16,7 +21,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list list-flex">
           <li class="main-nav__item">
-            <a class="main-nav__link" aria-current="page">
+            <a class="main-nav__link" href="" aria-current="page">
               Каталог
               <svg class="main-nav__link-icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#arrow-down"></use>
@@ -95,24 +100,24 @@
       <section class="sorting-filters">
         <h2 class="visually-hidden">Сортировка и фильтрация</h2>
         <form class="catalog__form catalog-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label>
+          <label for="sorting">
             Сортировка:
-            <select  class="catalog-form__item">
-              <option value="popular">По популярности</option>
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
           </label>
+          <select class="catalog-form__item" name="sorting" id="sorting">
+            <option value="popular">По популярности</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
           <fieldset class="catalog-form__group range">
             <legend class="catalog-form__title">Цена:</legend>
             <label class="catalog-form__label range__label">
               <span class="visually-hidden">от</span>
-              <input class="catalog-form__input range__input" type="number" name="min-price" value="100"> ₽
+              <input class="catalog-form__input range__input" type="number" name="min-price" value="100">₽
             </label>
             <span>-</span>
             <label class="catalog-form__label range__label">
               <span class="visually-hidden">до</span>
-              <input class="catalog-form__input range__input" type="number" name="max-price" value="500"> ₽
+              <input class="catalog-form__input range__input" type="number" name="max-price" value="500">₽
             </label>
           </fieldset>
           <fieldset class="catalog-form__group">
@@ -509,7 +514,7 @@
         </a>
         <ol class="catalog-pagination__list list-flex">
           <li class="catalog-pagination__item catalog-pagination__item--current">
-            <a class="catalog-pagination__link">1</a>
+            <a class="catalog-pagination__link" aria-current="page">1</a>
           </li>
           <li class="catalog-pagination__item">
             <a class="catalog-pagination__link" href="#">2</a>
@@ -536,21 +541,21 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list list-flex">
           <li class="social__item">
-            <a class="social__button button social__button--telegram" href="https://t.me/htmlacademy" target="_blank">
+            <a class="social__button button social__button--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Телеграмм
               </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__button button social__button--vk" href="https://vk.com/htmlacademy" target="_blank">
+            <a class="social__button button social__button--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Вконтакте
               </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__button button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <a class="social__button button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Ютуб
               </span>
@@ -587,16 +592,16 @@
       </section>
       <section class="copyright">
         <h2 class="visually-hidden">Копирайт</h2>
-        <a class="copyright__link" href=" https://htmlacademy.ru/" target="_blank">
+        <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
           <img class="copyright__logo" src="images/pictures/htmlacademy.svg" width="93" height="27" aria-hidden="true"
           alt="Логотип html-academy">
         </a>
         <p class="copyright__note">
           Сделано в
-          <a class="copyright__link-text" href="https://htmlacademy.ru/" target="_blank">
+          <a class="copyright__link-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
             .html academy
           </a>
-           © 2021
+          © 2021
         </p>
       </section>
     </footer>
