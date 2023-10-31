@@ -1,3 +1,14 @@
+.subscribe {
+  background: repeating-linear-gradient(
+    -45deg,
+    $additional-light, $additional-light 18px,
+    $special-theme-2 18px, $special-theme-2 28px,
+    $additional-light 28px, $additional-light 46px,
+    $special-extra-bright 46px, $special-extra-bright 56px
+    );
+    padding: 6px;
+}
+
 .subscribe__container {
   background-color: $white;
 }

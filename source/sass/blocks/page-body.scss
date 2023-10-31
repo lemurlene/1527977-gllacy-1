@@ -3,13 +3,21 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic-dark;
-  background-color: $special-light;
+  background-color: $special-theme-1;
   width: $desktop-width;
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
   padding-right: 98px;
   padding-left: 98px;
+}
+
+.page-body--theme-2 {
+  background-color: $special-theme-2;
+}
+
+.page-body--theme-3 {
+  background-color: $special-theme-3;
 }
 
 .page-body__wrapper {

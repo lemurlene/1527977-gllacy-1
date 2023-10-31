@@ -1,5 +1,18 @@
+.blogs-news {
+  position:relative;
+}
+
 .blogs-news__title {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+}
+
+.blogs-news__new {
+  display: inline-block;
+  position: absolute;
+  left: 0px;
 }

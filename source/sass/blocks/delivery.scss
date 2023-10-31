@@ -1,5 +1,9 @@
 .delivery {
-  background-image: url("../../images/background/delivery.jpg");
+  background-image: url("../images/background/delivery.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/background/delivery@2x.jpg");
+  }
 }
 
 .delivery__title {

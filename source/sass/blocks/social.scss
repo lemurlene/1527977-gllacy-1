@@ -1,0 +1,30 @@
+.social__button {
+  width: 28px;
+  height: 28px;
+  background-color: inherit;
+  border: 2px solid rgba($basic-extra-light, 0.3);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.social__button--telegram {
+  background-image: url("../images/pictures/telegram.svg");
+}
+
+.social__button--vk {
+  background-image: url("../images/pictures/vk.svg");
+}
+
+.social__button--youtube {
+  background-image: url("../images/pictures/youtube.svg");
+}
+
+.social__item:hover {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: linear-gradient($basic-extra-dark, $basic-extra-dark);
+  background-size: 60% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

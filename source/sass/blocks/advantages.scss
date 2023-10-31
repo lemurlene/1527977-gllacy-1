@@ -1,8 +1,37 @@
 .advantages {
-  background-image: url("../../images/background/advantages.png");
+  background-image: url("../images/background/advantages.png");
   padding: 24px;
 }
 
 .advantages__container {
   background-color: $white;
 }
+
+.advantages__item::before {
+  display: flex;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid $basic-extra-dark;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--ice-cream::before {
+  background-image: url("../images/pictures/ice-cream.svg");
+}
+
+.advantages__item--cow::before {
+  background-image: url("../images/pictures/cow.svg");
+}
+
+.advantages__item--leaf::before {
+  background-image: url("../images/pictures/leaf.svg");
+}
+
+.advantages__item--thermometer::before {
+  background-image: url("../images/pictures/thermometer.svg");
+}
+
+

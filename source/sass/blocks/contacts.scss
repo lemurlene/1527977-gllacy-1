@@ -1,5 +1,9 @@
 .contacts {
-  background-image: url("../../images/background/contacts.jpg");
+  background-image: url("../images/background/contacts.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/background/contacts@2x.jpg");
+  }
 }
 
 .contacts__container {
