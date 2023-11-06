@@ -1,7 +1,37 @@
+.gifts__list {
+  gap: 30px;
+}
+
 .gifts__item {
-  background-color: var(--special-neutral);
+  background-color: $special-neutral;
+  width: 570px;
+  height: 268px;
+  padding-left: 36px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 219px;
+  grid-template-areas:
+    "gifts-caption gifts-img"
+    "gifts-text gifts-img"
+    "gifts-button gifts-img";
+}
+
+.gifts__caption {
+  color: $basic-extra-dark;
+  grid-area: gifts-caption;
+  margin-top: 36px;
 }
 
 .gifts__text {
-  color: var(--basic-extra-dark);
+  color: $basic-extra-dark;
+  grid-area: gifts-text;
+}
+
+.gifts__button {
+  grid-area: gifts-button;
+  margin-bottom: 36px;
+}
+
+.gifts__img {
+  grid-area: gifts-img;
 }

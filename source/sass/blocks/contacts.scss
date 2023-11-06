@@ -1,4 +1,6 @@
 .contacts {
+  border-radius: 16px;
+  padding: 64px;
   background-image: url("../images/background/contacts.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -10,6 +12,8 @@
   background-color: $basic-extra-light;
   max-width: 343px;
   min-height: 364px;
+  border-radius: 8px;
+  padding: 40px;
 }
 
 .contacts__title {

@@ -1,6 +1,12 @@
 .product {
   text-align: center;
   background-color: $basic-extra-light;
+  width: 270px;
+  min-height: 280px;
+  margin-top: 51px;
+  padding: 133px 40px 24px;
+  position: relative;
+  border-radius: 8px;
 }
 
 .product__image {
@@ -8,4 +14,11 @@
   height: 168px;
   border-radius: 50%;
   box-shadow: rgba($basic-extra-dark, 0.1) 0 4px 12px;
+  position: absolute;
+  top: -51px;
+  right: 51px;
+}
+
+.product__caption {
+  margin: 0 auto;
 }

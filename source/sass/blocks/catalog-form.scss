@@ -2,9 +2,20 @@
   font-size: 14px;
   line-height: 20px;
   color: $basic-extra-dark;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
 }
 
 .catalog-form__item {
   background-color: rgba($basic-extra-light, 0.3);
   text-transform: lowercase;
+}
+
+.catalog-form__item--select {
+  display: block;
+}
+
+.catalog-form__button {
+  align-self: flex-end;
 }

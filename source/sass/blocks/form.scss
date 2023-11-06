@@ -1,5 +1,8 @@
 .form {
   background-color: $basic-extra-light;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .form__input {

@@ -75,9 +75,9 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main inner catalog">
+    <main class="page-main page-main--inner catalog">
       <h1 class="visually-hidden">Каталог</h1>
-      <header class="inner__header">
+      <header class="page-main__header">
         <ul class="breadcrumbs list-flex">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="index.html">
@@ -100,14 +100,16 @@
       <section class="sorting-filters">
         <h2 class="visually-hidden">Сортировка и фильтрация</h2>
         <form class="catalog__form catalog-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label for="sorting">
-            Сортировка:
-          </label>
-          <select class="catalog-form__item" name="sorting" id="sorting">
-            <option value="popular">По популярности</option>
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+          <div class="catalog-form__group catalog-form__group--sorting">
+            <label for="sorting">
+              Сортировка:
+            </label>
+            <select class="catalog-form__item catalog-form__item--select" name="sorting" id="sorting">
+              <option value="popular">По популярности</option>
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
           <fieldset class="catalog-form__group range">
             <legend class="catalog-form__title">Цена:</legend>
             <label class="catalog-form__label range__label">
@@ -507,7 +509,7 @@
       <section class="catalog-pagination">
         <h2 class="visually-hidden">Перемещение по страницам найденных товаров</h2>
         <button class="button catalog-pagination__button" type="button">Показать ещё</button>
-        <a class="catalog-pagination__link catalog-pagination__link--prev catalog-pagination__link--disabled">
+        <a class="catalog-pagination__item catalog-pagination__toggle catalog-pagination__toggle--prev catalog-pagination__toggle--disabled">
           <span class="visually-hidden">
             Предыдущая страница
           </span>
@@ -529,7 +531,7 @@
             <a class="catalog-pagination__link" href="#">5</a>
           </li>
         </ol>
-        <a class="catalog-pagination__link catalog-pagination__link--next" href="#">
+        <a class="catalog-pagination__item catalog-pagination__toggle" href="#">
           <span class="visually-hidden">
             Следующая страница
           </span>

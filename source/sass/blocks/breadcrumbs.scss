@@ -1,3 +1,7 @@
+.breadcrumbs {
+  gap: 8px;
+}
+
 .breadcrumbs__link {
   font-size: 14px;
   line-height: 20px;
@@ -7,4 +11,19 @@
 
 .breadcrumbs__link--current {
   text-decoration: underline solid 1px;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/pictures/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

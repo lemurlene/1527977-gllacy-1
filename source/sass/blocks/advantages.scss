@@ -1,14 +1,35 @@
 .advantages {
   background-image: url("../images/background/advantages.png");
   padding: 24px;
+  border-radius: 16px;
 }
 
 .advantages__container {
   background-color: $white;
+  border-radius: 16px;
+  padding: 56px 40px;
+}
+
+.advantages__title {
+  max-width: 995px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px 32px;
+}
+
+.advantages__item {
+  display: flex;
+  gap: 16px;
 }
 
 .advantages__item::before {
   display: flex;
+  flex-shrink: 0;
   content: "";
   width: 48px;
   height: 48px;
@@ -33,5 +54,3 @@
 .advantages__item--thermometer::before {
   background-image: url("../images/pictures/thermometer.svg");
 }
-
-

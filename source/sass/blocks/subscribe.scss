@@ -7,8 +7,15 @@
     $special-extra-bright 46px, $special-extra-bright 56px
     );
     padding: 6px;
+    border-radius: 16px;
 }
 
 .subscribe__container {
   background-color: $white;
+  border-radius: 16px;
+  padding: 26px;
+}
+
+.subscribe__form {
+  background-color: inherit;
 }

@@ -1,18 +1,25 @@
 .blogs-news {
   position:relative;
+  border-radius: 16px;
+}
+
+.blogs-news__img {
+  border-radius: 16px;
+}
+
+.blogs-news__content {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 300px;
 }
 
 .blogs-news__title {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  display: inline-block;
-  position: absolute;
-  left: 0px;
 }
 
 .blogs-news__new {
-  display: inline-block;
-  position: absolute;
-  left: 0px;
+  margin-top: 0;
 }

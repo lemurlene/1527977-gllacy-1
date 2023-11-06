@@ -4,25 +4,31 @@
 @import "global/fonts";
 
 /* BLOCKS */
+@import "blocks/page";
 @import "blocks/page-body";
 @import "blocks/page-wrapper";
+@import "blocks/container-flex-30";
 @import "blocks/button";
-@import "blocks/list-flex";
-@import "blocks/main-nav";
-@import "blocks/note";
 @import "blocks/title-h2";
 @import "blocks/title-h3";
 @import "blocks/title-h4";
+@import "blocks/note";
+@import "blocks/list-flex";
+@import "blocks/form";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/user-nav";
+@import "blocks/page-main";
 @import "blocks/hero";
 @import "blocks/slide";
 @import "blocks/social";
 @import "blocks/gifts";
+@import "blocks/products";
 @import "blocks/product";
 @import "blocks/advantages";
 @import "blocks/blogs-news";
 @import "blocks/subscribe";
 @import "blocks/delivery";
-@import "blocks/form";
 @import "blocks/contacts";
 @import "blocks/page-footer";
 @import "blocks/site-nav";

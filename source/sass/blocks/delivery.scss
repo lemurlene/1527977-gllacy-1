@@ -1,4 +1,9 @@
 .delivery {
+  border-radius: 16px;
+  padding: 64px 64px 64px 100px;
+  display: flex;
+  align-items: center;
+  column-gap: 135px;
   background-image: url("../images/background/delivery.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -8,4 +13,13 @@
 
 .delivery__title {
   text-align: left;
+  margin: 0;
+}
+
+.delivery__form {
+  width: 500px;
+  min-height: 406px;
+  flex-shrink: 0;
+  padding: 40px;
+  border-radius: 8px;
 }

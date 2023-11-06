@@ -1,0 +1,9 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+.page-main--inner {
+  row-gap: 40px;
+}

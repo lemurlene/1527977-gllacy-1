@@ -42,7 +42,7 @@
         <a class="main-nav__phone" href="tel:+78005558628">
           +7 800 555-86-28
         </a>
-        <ul class="main-nav__list user-nav list-flex">
+        <ul class="main-nav__list list-flex user-nav">
           <li class="user-nav__item search">
             <a class="user-nav__link" href="#">
               <svg class="search__icon" width="16" height="16" aria-hidden="true">
@@ -89,14 +89,16 @@
             <a class="button hero__button" href="catalog.html">
               Заказать
             </a>
-            <picture>
+            <picture class="hero__img">
               <source type="image/webp" srcset="images/slider/main-strawberry.webp 1x, images/slider/main-strawberry@2x.webp 2x">
-              <img class="hero__img" src="images/slider/main-strawberry.png" srcset="images/slider/main-strawberry@2x.png 2x"
+              <img src="images/slider/main-strawberry.png" srcset="images/slider/main-strawberry@2x.png 2x"
               width="350" height="510"
               alt="Вариант сервировки: шарик красного мороженого и белого с клубничным топпингом в вафельном рожке.">
             </picture>
+            <!--Ярослав, подскажи, пожалуйста, может перенести сюда изображения маленьких мороженок из фона?
+            Я вот подумала, если контент-менеджер будет менять на слайдах крупные, то и маленькие надо тоже будет менять. -->
           </li>
-          <li class="hero__item slide slide--2">
+          <li class="hero__item slide slide--2 visually-hidden">
             <h3 class="hero__caption">Сливочное мороженое со вкусом банана</h3>
             <p class="hero__text">
               Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
@@ -105,14 +107,14 @@
             <a class="button hero__button" href="catalog.html">
               Заказать
             </a>
-            <picture>
+            <picture class="hero__img">
               <source type="image/webp" srcset="images/slider/main-banana.webp 1x, images/slider/main-banana@2x.webp 2x">
-              <img class="hero__img" src="images/slider/main-banana.png" srcset="images/slider/main-banana@2x.png 2x"
+              <img src="images/slider/main-banana.png" srcset="images/slider/main-banana@2x.png 2x"
               width="350" height="510"
               alt="Вариант сервировки: три шарика жёлтого мороженого в вафельном рожке.">
             </picture>
           </li>
-          <li class="hero__item slide slide--3">
+          <li class="hero__item slide slide--3 visually-hidden">
             <h3 class="hero__caption">Карамельный пломбир с маршмеллоу</h3>
             <p class="hero__text">
               Необычный сладкий десерт с карамельным топпингом и кусочками зефира
@@ -121,9 +123,9 @@
             <a class="button hero__button" href="catalog.html">
               Заказать
             </a>
-            <picture>
+            <picture class="hero__img">
               <source type="image/webp" srcset="images/slider/main-caramel.webp 1x, images/slider/main-caramel@2x.webp 2x">
-              <img class="hero__img" src="images/slider/main-caramel.png" srcset="images/slider/main-caramel@2x.png 2x"
+              <img src="images/slider/main-caramel.png" srcset="images/slider/main-caramel@2x.png 2x"
               width="350" height="510"
               alt="Вариант сервировки: четыре шарика кремового мороженого с зефирной посыпкой в вафельном рожке.">
             </picture>
@@ -173,7 +175,7 @@
             <h3 class="visually-hidden">Мы в соцсетях</h3>
             <ul class="social__list list-flex">
               <li class="social__item">
-                <a class="social__button button social__button--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <a class="button social__button social__button--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
                   <span class="visually-hidden">
                     Телеграмм
                   </span>
@@ -198,33 +200,33 @@
         </footer>
       </article>
       <section class="gifts">
-        <h2 class="title-h2">Заказывайте мороженое и получайте подарки!</h2>
+        <h2 class="title-h2">Заказывайте мороженое и&nbsp;получайте подарки!</h2>
         <ul class="gifts__list list-flex">
           <li class="gifts__item gifts__item--raspberry">
-            <h3 class="title-h3">Малинка даром!</h3>
+            <h3 class="gifts__caption title-h3">Малинка даром!</h3>
             <p class="gifts__text">
               При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
             <a class="button gifts__button" href="catalog.html">
               Хочу подарок
             </a>
-            <picture>
+            <picture class="gifts__img">
               <source type="image/webp" srcset="images/illustrations/gifts-raspberry.webp 1x, images/illustrations/gifts-raspberry@2x.webp 2x">
-              <img class="gifts__img" src="images/illustrations/gifts-raspberry.png" srcset="images/illustrations/gifts-raspberry@2x.png 2x"
+              <img src="images/illustrations/gifts-raspberry.png" srcset="images/illustrations/gifts-raspberry@2x.png 2x"
               width="219" height="268" alt="" aria-hidden="true">
             </picture>
           </li>
           <li class="gifts__item gifts__item--marshmallow">
             <h3 class="title-h3">Маршмеллоу даром!</h3>
             <p class="gifts__text">
-              При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
+              При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок совершенно бесплатно.
             </p>
             <a class="button gifts__button" href="catalog.html">
               Хочу подарок
             </a>
-            <picture>
+            <picture class="gifts__img">
               <source type="image/webp" srcset="images/illustrations/gifts-marshmallow.webp 1x, images/illustrations/gifts-marshmallow@2x.webp 2x">
-              <img class="gifts__img" src="images/illustrations/gifts-marshmallow.png" srcset="images/illustrations/gifts-marshmallow@2x.png 2x"
+              <img src="images/illustrations/gifts-marshmallow.png" srcset="images/illustrations/gifts-marshmallow@2x.png 2x"
               width="219" height="268" alt="" aria-hidden="true">
             </picture>
           </li>
@@ -342,21 +344,21 @@
       <section class="advantages">
         <div class="advantages__container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="title-h2">
+          <p class="title-h2 advantages__title">
             Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
           </p>
-          <ul class="advantages__list list-flex">
+          <ul class="advantages__list">
             <li class="advantages__item advantages__item--ice-cream">
               Всё наше мороженое изготавливается на собственном производстве с использованием
               современного оборудования и проверенных временем технологий.
             </li>
             <li class="advantages__item advantages__item--cow">
-              Закупка ингредиентов производится только у проверенных фермерских хозяйств,
-              с которыми нас связывает долговременное сотрудничество.
+              Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств,
+              с которыми нас&nbsp;связывает долговременное сотрудничество.
             </li>
             <li class="advantages__item advantages__item--leaf">
               Для приготовления мороженого используются сливки и молоко высочайшего качества.
-              Все ингредиенты и добавки произведены из натурального сырья.
+              Все ингредиенты и&nbsp;добавки произведены из натурального сырья.
             </li>
             <li class="advantages__item advantages__item--thermometer">
               Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт
@@ -365,40 +367,49 @@
           </ul>
         </div>
       </section>
-      <aside class="blogs-news">
-        <img class="blogs-news__img" src="images/illustrations/news-blog.png" width="570" height="224" alt="">
-        <h2 class="blogs-news__title">Новое в нашем блоге</h2>
-        <a class="blogs-news__new" href="#">
-          <h3 class="title-h3">10 способов сервировки фруктовых щербетов к столу</h3>
-        </a>
-      </aside>
-      <section class="subscribe">
-        <div class="subscribe__container">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p>
-            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
-            что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-          </p>
-          <form class="subscribe__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe__label form__label">
-              <span class="visually-hidden">
-                Ваш e-mail
-              </span>
-              <input class="form__input" type="email" name="email" placeholder="email@example.com">
-            </label>
-            <button class="form__button button button--color" type="submit">
-              Отправить
-            </button>
-          </form>
-        </div>
-      </section>
+      <div class="container-flex-30">
+        <aside class="blogs-news">
+          <img class="blogs-news__img" src="images/illustrations/news-blog.png" width="570" height="224" alt="">
+          <div class="blogs-news__content">
+            <h2 class="blogs-news__title">Новое в нашем блоге</h2>
+            <a class="blogs-news__new" href="#">
+              <h3 class="title-h3">10 способов сервировки фруктовых щербетов к столу</h3>
+            </a>
+          </div>
+        </aside>
+        <section class="subscribe">
+          <div class="subscribe__container">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p>
+              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
+              что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </p>
+            <form class="form subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="subscribe__label form__label">
+                <span class="visually-hidden">
+                  Ваш e-mail
+                </span>
+                <input class="form__input" type="email" name="email" placeholder="email@example.com">
+              </label>
+              <button class="form__button button button--color" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
       <section class="delivery">
-        <h2 class="title-h2 delivery__title">Доставка любимого мороженого на дом</h2>
-        <p>
-          Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
-          Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
-        </p>
+        <div class="delivery__info">
+          <h2 class="title-h2 delivery__title">Доставка любимого мороженого на дом</h2>
+          <p>
+            Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин?
+            Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
+          </p>
+        </div>
         <form class="delivery__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <p>
+            Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+          </p>
           <label class="form__label">
             Дата
             <input class="form__input" type="text" name="delivery-date" placeholder="01.04.2020">
@@ -473,7 +484,7 @@
       </section>
       <section class="site-nav">
         <h2 class="visually-hidden">Навигация по сайту</h2>
-        <ul class="site-nav__list list-flex">
+        <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="note" href="#">
               <b class="for-suppliers">

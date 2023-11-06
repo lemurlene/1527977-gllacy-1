@@ -1,12 +1,37 @@
+.hero__item {
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: 455px 630px;
+  grid-template-areas:
+    "hero-caption hero-img"
+    "hero-text hero-img"
+    "hero-button hero-img";
+}
+
 .hero__caption {
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
   color: $basic-extra-dark;
+  grid-area: hero-caption;
 }
 
 .hero__text {
   font-size: 18px;
   line-height: 24px;
   color: $basic-extra-dark;
+  grid-area: hero-text;
+}
+
+.hero__button {
+  grid-area: hero-button;
+}
+
+.hero__img {
+  grid-area: hero-img;
+}
+
+.hero__footer {
+  display: flex;
+  justify-content: space-between;
 }

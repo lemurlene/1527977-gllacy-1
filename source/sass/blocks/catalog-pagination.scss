@@ -1,8 +1,42 @@
-.catalog-pagination__link {
-  line-height: 20px;
-  color: $basic-extra-dark;
+.catalog-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalog-pagination__button {
+  position: absolute;
+}
+
+.catalog-pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 50px;
+}
+
+.catalog-pagination__toggle {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/pictures/arrow-right-dark.svg");
+}
+
+.catalog-pagination__toggle--prev {
+  margin-left: auto;
+  transform: rotate(180deg);
+}
+
+.catalog-pagination__toggle--disabled {
+  opacity: 0.3;
 }
 
 .catalog-pagination__item--current {
   background-color: $basic-extra-light;
+}
+
+.catalog-pagination__link {
+  line-height: 20px;
+  color: $basic-extra-dark;
 }
