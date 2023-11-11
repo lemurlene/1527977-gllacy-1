@@ -9,6 +9,8 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../images/background/delivery@2x.jpg");
   }
+  background-repeat: no-repeat;
+  background-color: $additional-extra-light;
 }
 
 .delivery__title {

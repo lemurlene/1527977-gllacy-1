@@ -5,9 +5,10 @@
   color: $basic-extra-dark;
   background-color: $basic-extra-light;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: max-content;
+  max-width: max-content;
   height: min-content;
   padding: 12px 32px;
   border-radius: 26px;

@@ -3,19 +3,24 @@
   display: flex;
   gap: 16px;
   align-items: center;
+  color: $basic-extra-dark;
 }
 
 .main-nav__list {
   gap: 16px;
 }
 
-.main-nav a {
+.main-nav__link {
+  padding: 8px;
+  display: block;
   line-height: 20px;
-  color: $basic-extra-dark;
+  color: inherit;
 }
 
 .main-nav__phone {
   margin-left: auto;
   min-width: 150px;
   font-weight: 700;
+  padding: 6px 0;
+  color: inherit;
 }

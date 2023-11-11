@@ -6,6 +6,8 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../images/background/contacts@2x.jpg");
   }
+  background-repeat: no-repeat;
+  background-color: $additional-special-light;
 }
 
 .contacts__container {

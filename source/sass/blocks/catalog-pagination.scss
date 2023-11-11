@@ -2,10 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .catalog-pagination__button {
   position: absolute;
+}
+
+.catalog-pagination__list {
+  max-width: 350px;
 }
 
 .catalog-pagination__item {

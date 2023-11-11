@@ -77,60 +77,59 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Онлайн и офлайн-магазин мороженного Глейси.</h1>
-      <article class="hero slider">
-        <h2 class="visually-hidden">Слайдер с несколькими вкусами нашего мороженого.</h2>
-        <ol class="slider__list list-flex">
-          <li class="hero__item slide slide--1">
-            <h3 class="hero__caption">Нежный пломбир с клубничным джемом</h3>
-            <p class="hero__text">
-              Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом
+      <article class="hero">
+        <div class="hero-slider">
+          <div class="hero-slider__content hero-slider__content--1">
+            <h2 class="hero-slider__caption">Нежный пломбир с&nbsp;клубничным джемом</h2>
+            <p class="hero-slider__text">
+              Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом
               – это идеальный десерт для всей семьи.
             </p>
-            <a class="button hero__button" href="catalog.html">
+            <a class="button hero-slider__button" href="catalog.html">
               Заказать
             </a>
-            <picture class="hero__img">
+          </div>
+          <div class="hero-slider__content hero-slider__content--2 hide">
+            <h2 class="hero-slider__caption">Сливочное мороженое со вкусом банана</h2>
+            <p class="hero-slider__text">
+              Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
+              и наслаждение даже в самый жаркий летний день.
+            </p>
+            <a class="button hero-slider__button" href="catalog.html">
+              Заказать
+            </a>
+          </div>
+          <div class="hero-slider__content hero-slider__content--3 hide">
+            <h2 class="hero-slider__caption">Карамельный пломбир с маршмеллоу</h2>
+            <p class="hero-slider__text">
+              Необычный сладкий десерт с карамельным топпингом и кусочками зефира
+              завоюет сердца сладкоежек всех возрастов.
+            </p>
+            <a class="button hero-slider__button" href="catalog.html">
+              Заказать
+            </a>
+          </div>
+          <div class="hero-slider__images">
+            <picture class="hero-slider__img hero-slider__img--1 hero-slider__img--active">
               <source type="image/webp" srcset="images/slider/main-strawberry.webp 1x, images/slider/main-strawberry@2x.webp 2x">
               <img src="images/slider/main-strawberry.png" srcset="images/slider/main-strawberry@2x.png 2x"
               width="350" height="510"
               alt="Вариант сервировки: шарик красного мороженого и белого с клубничным топпингом в вафельном рожке.">
             </picture>
-            <!--Ярослав, подскажи, пожалуйста, может перенести сюда изображения маленьких мороженок из фона?
-            Я вот подумала, если контент-менеджер будет менять на слайдах крупные, то и маленькие надо тоже будет менять. -->
-          </li>
-          <li class="hero__item slide slide--2 visually-hidden">
-            <h3 class="hero__caption">Сливочное мороженое со вкусом банана</h3>
-            <p class="hero__text">
-              Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
-              и наслаждение даже в самый жаркий летний день.
-            </p>
-            <a class="button hero__button" href="catalog.html">
-              Заказать
-            </a>
-            <picture class="hero__img">
+            <picture class="hero-slider__img hero-slider__img--2">
               <source type="image/webp" srcset="images/slider/main-banana.webp 1x, images/slider/main-banana@2x.webp 2x">
               <img src="images/slider/main-banana.png" srcset="images/slider/main-banana@2x.png 2x"
               width="350" height="510"
               alt="Вариант сервировки: три шарика жёлтого мороженого в вафельном рожке.">
             </picture>
-          </li>
-          <li class="hero__item slide slide--3 visually-hidden">
-            <h3 class="hero__caption">Карамельный пломбир с маршмеллоу</h3>
-            <p class="hero__text">
-              Необычный сладкий десерт с карамельным топпингом и кусочками зефира
-              завоюет сердца сладкоежек всех возрастов.
-            </p>
-            <a class="button hero__button" href="catalog.html">
-              Заказать
-            </a>
-            <picture class="hero__img">
+            <picture class="hero-slider__img hero-slider__img--3">
               <source type="image/webp" srcset="images/slider/main-caramel.webp 1x, images/slider/main-caramel@2x.webp 2x">
               <img src="images/slider/main-caramel.png" srcset="images/slider/main-caramel@2x.png 2x"
               width="350" height="510"
               alt="Вариант сервировки: четыре шарика кремового мороженого с зефирной посыпкой в вафельном рожке.">
             </picture>
-          </li>
-        </ol>
+          </div>
+        </div>
         <button class="slider__button slider__button--prev" type="button">
           <span class="visually-hidden">
             Предыдущее фото
@@ -175,21 +174,21 @@
             <h3 class="visually-hidden">Мы в соцсетях</h3>
             <ul class="social__list list-flex">
               <li class="social__item">
-                <a class="button social__button social__button--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <a class="social__button social__button--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
                   <span class="visually-hidden">
                     Телеграмм
                   </span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__button button social__button--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+                <a class="social__button social__button--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
                   <span class="visually-hidden">
                     Вконтакте
                   </span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__button button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+                <a class="social__button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
                   <span class="visually-hidden">
                     Ютуб
                   </span>
@@ -367,7 +366,7 @@
           </ul>
         </div>
       </section>
-      <div class="container-flex-30">
+      <div class="container-grid-30">
         <aside class="blogs-news">
           <img class="blogs-news__img" src="images/illustrations/news-blog.png" width="570" height="224" alt="">
           <div class="blogs-news__content">
@@ -460,21 +459,21 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list list-flex">
           <li class="social__item">
-            <a class="social__button button social__button--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+            <a class="social__button social__button--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Телеграмм
               </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__button button social__button--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+            <a class="social__button social__button--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Вконтакте
               </span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__button button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+            <a class="social__button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">
                 Ютуб
               </span>
