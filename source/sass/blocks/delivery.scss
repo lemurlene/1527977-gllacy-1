@@ -1,9 +1,10 @@
 .delivery {
   border-radius: 16px;
   padding: 64px 64px 64px 100px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 500px;
   column-gap: 135px;
+  align-items: center;
   background-image: url("../images/background/delivery.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -15,13 +16,30 @@
 
 .delivery__title {
   text-align: left;
+  margin: 0 0 24px;
+}
+
+.delivery__text {
   margin: 0;
 }
 
+.delivery__form-title {
+  margin: 0 0 32px;
+}
+
 .delivery__form {
-  width: 500px;
-  min-height: 406px;
-  flex-shrink: 0;
-  padding: 40px;
   border-radius: 8px;
+  display: grid;
+  grid-template-columns: 117px auto;
+  gap: 20px 16px;
+}
+
+.delivery__form-address {
+  grid-column: 1/-1;
+}
+
+.delivery__form-button {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-top: 8px
 }

@@ -9,14 +9,24 @@
     padding: 6px;
     border-radius: 16px;
     margin-bottom: auto;
+    min-height: 224px;
 }
 
 .subscribe__container {
-  background-color: $white;
-  border-radius: 16px;
   padding: 26px;
+}
+
+.subscribe__text {
+  margin: 0 0 42px 0;
 }
 
 .subscribe__form {
   background-color: inherit;
+  display: flex;
+  gap: 14px;
+}
+
+.subscribe__label,
+.subscribe__input {
+  width: 100%;
 }

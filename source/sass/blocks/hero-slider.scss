@@ -69,3 +69,18 @@
 .page-body--theme-3 .hero-slider__img::after {
   background-color: $special-theme-3-light;
 }
+
+.hero-slider__toggle {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.hero-slider__toggle--prev {
+  left: 0;
+}
+
+.hero-slider__toggle--next {
+  left: 320px;
+}

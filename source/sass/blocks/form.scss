@@ -1,17 +1,21 @@
-.form {
-  background-color: $basic-extra-light;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.form__input {
-  background-color: $white;
-}
-
 .form__label {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: $basic-extra-dark;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__input {
+  background-color: $white;
+  border-radius: 4px;
+  padding: 14px 16px;
+
+  &::placeholder
+    {
+      color: $basic-neutral;
+      font-size: 16px;
+    }
 }

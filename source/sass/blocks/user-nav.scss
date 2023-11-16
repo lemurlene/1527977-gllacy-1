@@ -3,6 +3,11 @@
   justify-content: flex-end;
 }
 
+.user-nav__item {
+  min-width: 32px;
+  min-height: 32px;
+}
+
 .user-nav__link {
   display: flex;
   column-gap: 6px;

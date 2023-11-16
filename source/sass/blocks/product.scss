@@ -7,6 +7,10 @@
   padding: 133px 40px 24px;
   position: relative;
   border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .product__image {
@@ -21,4 +25,14 @@
 
 .product__caption {
   margin: 0 auto;
+}
+
+.product__price {
+  margin-left: 0;
+}
+
+.product__button {
+  padding: 6px 8px;
+  min-width: 32px;
+  min-height: 32px;
 }
