@@ -2,15 +2,16 @@
   text-align: center;
   background-color: $basic-extra-light;
   width: 270px;
-  min-height: 280px;
+  min-height: 281px;
   margin-top: 51px;
   padding: 133px 40px 24px;
   position: relative;
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .product__image {
@@ -25,6 +26,10 @@
 
 .product__caption {
   margin: 0 auto;
+}
+
+.product__text {
+  margin: 0;
 }
 
 .product__price {

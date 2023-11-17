@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px 24px;
+  grid-template-columns: repeat(2, max-content);
+  row-gap: 8px;
 }
 
 .site-nav a {
   color: inherit;
+}
+
+.site-nav__item {
+  padding-left: 24px;
 }

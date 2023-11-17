@@ -1,3 +1,12 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 193px;
+}
+
 .copyright__link {
   display: block;
 }
@@ -5,6 +14,7 @@
 .copyright__note {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .copyright__link-text {
