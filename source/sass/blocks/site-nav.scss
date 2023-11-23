@@ -14,3 +14,19 @@
 .site-nav__item {
   padding-left: 24px;
 }
+
+.site-nav__item--decor {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/pictures/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

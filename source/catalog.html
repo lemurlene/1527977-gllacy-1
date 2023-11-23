@@ -6,6 +6,8 @@
     <meta name="keywords" content="мороженое, сливочное, на развес, магазин, онлайн, щербет, фруктовый лёд, мелорин">
     <meta name="description" content="мороженое онлайн-магазин офлайн-магазин">
     <title>HTML Academy: Глейси - Каталог</title>
+    <link rel="preload" href="fonts/inter-400.woff2" as="font">
+    <link rel="preload" href="fonts/inter-700.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="images/favicon/152.png" type="image/svg+xml">
@@ -42,9 +44,9 @@
         <a class="main-nav__phone" href="tel:+78005558628">
           +7 800 555-86-28
         </a>
-        <ul class="main-nav__list user-nav list-flex">
+        <ul class="user-nav list-flex">
           <li class="user-nav__item search">
-            <a class="user-nav__link" href="#">
+            <a class="user-nav__link user-nav__link--no-text" href="#">
               <svg class="search__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#search"></use>
               </svg>
@@ -568,7 +570,7 @@
       <section class="site-nav">
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="site-nav__list">
-          <li class="site-nav__item">
+          <li class="site-nav__item site-nav__item--decor">
             <a class="note" href="#">
               <b class="for-suppliers">
                 Для поставщиков

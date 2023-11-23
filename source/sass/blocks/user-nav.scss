@@ -1,6 +1,6 @@
 .user-nav {
-  min-width: 270px;
-  justify-content: flex-end;
+  min-width: 266px;
+  gap: 16px;
 }
 
 .user-nav__item {
@@ -9,11 +9,12 @@
 }
 
 .user-nav__link {
-  display: flex;
-  column-gap: 6px;
   padding: 6px 16px;
-  line-height: 20px;
-  color: inherit;
   background-color: rgba($basic-extra-light, 0.3);
   border-radius: 30px;
+}
+
+.user-nav__link--no-text {
+  padding: 9px;
+  border-radius: 50%;
 }

@@ -6,21 +6,22 @@
   color: $basic-extra-dark;
 }
 
-.main-nav__list {
-  gap: 16px;
-}
-
-.main-nav__link {
-  padding: 8px;
-  display: block;
+.main-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
   line-height: 20px;
   color: inherit;
 }
 
+.main-nav__link {
+  padding: 8px 16px;
+}
+
 .main-nav__phone {
   margin-left: auto;
-  min-width: 150px;
+  min-width: 148px;
   font-weight: 700;
   padding: 6px 0;
-  color: inherit;
 }
