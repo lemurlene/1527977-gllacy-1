@@ -16,7 +16,7 @@
   </head>
   <body class="page-body page-wrapper">
     <header class="page-header">
-      <a class="page-header__logo logo logo--disabled" href="" aria-current="page">
+      <a class="page-header__logo page-header__logo--disabled" href="" aria-current="page">
         <img class="logo__img" src="images/pictures/gllacy.svg" width="137" height="56" aria-hidden="true"
         alt="Логотип Глейси">
       </a>
@@ -233,7 +233,7 @@
           </li>
         </ul>
       </section>
-      <section class="products products--popular">
+      <section class="products">
         <h2 class="title-h2">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="products__list list-flex">
           <li class="products__item">
@@ -249,17 +249,19 @@
               <p class="product__text">
                 Сливочное мороженое с малиновым джемом
               </p>
-              <b class="product__price title-h4">
-                310 ₽/кг
-              </b>
-              <a class="product__button button button--color" href="#">
-                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                  <use xlink:href="images/icons/stack.svg#cart"></use>
-                </svg>
-                <span class="visually-hidden">
-                  Положить в корзину
-                </span>
-              </a>
+              <footer class="product__footer">
+                <b class="product__price title-h4">
+                  310 ₽/кг
+                </b>
+                <a class="product__button button button--color" href="#">
+                  <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Положить в корзину
+                  </span>
+                </a>
+              </footer>
             </article>
           </li>
           <li class="products__item">
@@ -275,17 +277,19 @@
               <p class="product__text">
                 Фисташковый пломбир с кусочками шоколада
               </p>
-              <b class="product__price title-h4">
-                340 ₽/кг
-              </b>
-              <a class="product__button button button--color" href="#">
-                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                  <use xlink:href="images/icons/stack.svg#cart"></use>
-                </svg>
-                <span class="visually-hidden">
-                  Положить в корзину
-                </span>
-              </a>
+              <footer class="product__footer">
+                <b class="product__price title-h4">
+                  340 ₽/кг
+                </b>
+                <a class="product__button button button--color" href="#">
+                  <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Положить в корзину
+                  </span>
+                </a>
+              </footer>
             </article>
           </li>
           <li class="products__item">
@@ -301,17 +305,19 @@
               <p class="product__text">
                 Крем-брюле с&nbsp;черничным джемом
               </p>
-              <b class="product__price title-h4">
-                330 ₽/кг
-              </b>
-              <a class="product__button button button--color" href="#">
-                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                  <use xlink:href="images/icons/stack.svg#cart"></use>
-                </svg>
-                <span class="visually-hidden">
-                  Положить в корзину
-                </span>
-              </a>
+              <footer class="product__footer">
+                <b class="product__price title-h4">
+                  330 ₽/кг
+                </b>
+                <a class="product__button button button--color" href="#">
+                  <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Положить в корзину
+                  </span>
+                </a>
+              </footer>
             </article>
           </li>
           <li class="products__item">
@@ -327,17 +333,19 @@
               <p class="product__text">
                 Ванильный пломбир со&nbsp;сладкой посыпкой
               </p>
-              <b class="product__price title-h4">
-                320 ₽/кг
-              </b>
-              <a class="product__button button button--color" href="#">
-                <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                  <use xlink:href="images/icons/stack.svg#cart"></use>
-                </svg>
-                <span class="visually-hidden">
-                  Положить в корзину
-                </span>
-              </a>
+              <footer class="product__footer">
+                <b class="product__price title-h4">
+                  320 ₽/кг
+                </b>
+                <a class="product__button button button--color" href="#">
+                  <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Положить в корзину
+                  </span>
+                </a>
+              </footer>
             </article>
           </li>
         </ul>
@@ -411,21 +419,33 @@
             Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
           </p>
         </div>
-        <div class="wrapper-extra-light-br-8">
+        <div class="wrapper-extra-light-br-8 shadow-big">
           <p class="delivery__form-title">
             Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.
           </p>
           <form class="delivery__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form__label">
+            <label class="form__label form__label--tooltip">
               Дата
+              <button class="tooltip" type="button" aria-labelledby="tooltip-delivery-date">
+                <span class="tooltip__text" role="tooltip" id="tooltip-delivery-date">
+                  Введите дату:<br>
+                  день, месяц и год
+                </span>
+              </button>
               <input class="form__input" type="text" name="delivery-date" placeholder="01.04.2020">
             </label>
-            <label class="form__label">
+             <label class="form__label">
               Телефон
               <input class="form__input" type="text" name="delivery-phone" placeholder="+7 800 999-00-00">
             </label>
-            <label class="form__label delivery__form-address">
+            <label class="form__label form__label--tooltip delivery__form-address-label">
               Адрес
+              <button class="tooltip" type="button" aria-labelledby="tooltip-delivery-address">
+                <span class="tooltip__text" role="tooltip" id="tooltip-delivery-address">
+                  Введите название<br>
+                  улицы, дома и квартиры
+                </span>
+              </button>
             <input class="form__input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
             </label>
             <button class="form__button button button--color delivery__form-button" type="submit">
@@ -435,7 +455,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="wrapper-extra-light-br-8">
+        <div class="wrapper-extra-light-br-8 shadow-medium">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="contacts__list list-flex">
             <li class="contacts__item">

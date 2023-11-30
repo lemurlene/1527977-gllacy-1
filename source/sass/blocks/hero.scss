@@ -5,4 +5,19 @@
 
 .hero__pagination {
   gap: 8px;
+  align-items: center;
+}
+
+.hero__pagination-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  border: none;
+  background-color: rgba($basic-extra-light, 0.3);
+  cursor: pointer;
+}
+
+.hero__pagination-button--current {
+  background-color: $basic-extra-light;
+  pointer-events: none;
 }

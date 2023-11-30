@@ -24,7 +24,12 @@
   font-size: 18px;
   line-height: 24px;
   color: $basic-extra-dark;
-  margin: 0 0 48px;
+  margin: 0 0 44px;
+}
+
+.hero-slider__button {
+  margin-left: -4px;
+  margin-bottom: -7px;
 }
 
 .hero-slider__images {
@@ -84,6 +89,7 @@
   background-color: rgba($basic-extra-light, 0.3);
   border: 2px solid $basic-extra-light;
   color: $basic-extra-light;
+  cursor: pointer;
 }
 
 .hero-slider__toggle--prev {

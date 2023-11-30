@@ -4,14 +4,20 @@
   font-weight: 700;
   color: $basic-extra-dark;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 8px;
+  align-items: center;
+}
+
+.form__label--tooltip {
+  column-gap: 4px;
 }
 
 .form__input {
   background-color: $white;
   border-radius: 4px;
   padding: 14px 16px;
+  width: 100%;
 
   &::placeholder
     {

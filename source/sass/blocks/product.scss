@@ -9,9 +9,7 @@
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .product__image {
@@ -25,19 +23,24 @@
 }
 
 .product__caption {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .product__text {
   margin: 0;
 }
 
-.product__price {
-  margin-left: 0;
+.product__footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product__button {
-  padding: 6px 8px;
+  padding: 6px;
   min-width: 32px;
   min-height: 32px;
+  border: 2px solid $special-extra-bright;
 }

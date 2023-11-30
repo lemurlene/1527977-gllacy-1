@@ -1,12 +1,14 @@
 .catalog-pagination {
+  margin-top: 16px;
+  padding: 51px 0;
   display: flex;
+  justify-content: end;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 }
 
 .catalog-pagination__button {
-  position: absolute;
+  margin-right: 331px;
 }
 
 .catalog-pagination__list {
@@ -24,12 +26,11 @@
 
 .catalog-pagination__toggle {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
   background-image: url("../images/pictures/arrow-right-dark.svg");
 }
 
 .catalog-pagination__toggle--prev {
-  margin-left: auto;
   transform: rotate(180deg);
 }
 

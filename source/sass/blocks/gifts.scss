@@ -1,3 +1,7 @@
+.gifts {
+  margin-top: -2px;
+}
+
 .gifts__item {
   background-color: $special-neutral;
   padding-left: 36px;
@@ -8,24 +12,24 @@
     "gifts-caption gifts-img"
     "gifts-text gifts-img"
     "gifts-button gifts-img";
-    row-gap: 28px;
 }
 
 .gifts__caption {
   color: $basic-extra-dark;
   grid-area: gifts-caption;
-  margin: 36px 0 0;
+  margin: 36px 0 28px;
 }
 
 .gifts__text {
   color: $basic-extra-dark;
   grid-area: gifts-text;
-  margin: 0;
+  margin: 0 0 24px;
 }
 
 .gifts__button {
   grid-area: gifts-button;
-  margin-bottom: 36px;
+  margin-left: -4px;
+  margin-bottom: 32px;
   align-self: end;
 }
 

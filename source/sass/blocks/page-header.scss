@@ -4,3 +4,7 @@
   align-items: center;
   padding: 24px 0;
 }
+
+.page-header__logo--disabled {
+  pointer-events: none;
+}
