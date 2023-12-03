@@ -1,27 +1,87 @@
 .main-nav {
   flex-grow: 1;
   display: flex;
-  gap: 16px;
   align-items: center;
   color: $basic-extra-dark;
+  gap: 10px;
 }
 
-.main-nav a {
+.main-nav__link {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 6px;
   line-height: 20px;
   color: inherit;
-}
-
-.main-nav__link {
   padding: 8px 16px;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus {
+    border-radius: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($basic-extra-light, 0.5);
+  }
+
+  &:focus {
+    outline: solid 2px $basic-extra-dark;
+  }
+
+  &:active {
+    background-color: $basic-extra-light;
+    outline: transparent;
+  }
 }
 
-.main-nav__phone {
+.main-nav__link--phone {
   margin-left: auto;
   min-width: 148px;
   font-weight: 700;
-  padding: 6px 0;
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.main-nav__link--user {
+  padding: 6px 16px;
+  background-color: rgba($basic-extra-light, 0.3);
+  border-radius: 30px;
+
+  &:focus {
+    outline: solid 2px $black;
+  }
+
+  &:active {
+    outline: transparent;
+  }
+}
+
+.main-nav__link--user-no-text {
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.main-nav__link--open {
+  border-radius: 30px;
+  background-color: $special-bright;
+  color: $basic-extra-light;
+
+  .main-nav__link-icon {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: rgba($special-bright, 0.6);
+  }
+  &:focus {
+    background-color: $special-bright;
+    outline: solid 2px $black;
+  }
+  &:active {
+    background-color: rgba($special-bright, 0.3);
+    outline: transparent;
+  }
 }
