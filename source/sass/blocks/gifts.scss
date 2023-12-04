@@ -1,7 +1,3 @@
-.gifts {
-  margin-top: -2px;
-}
-
 .gifts__item {
   background-color: $special-neutral;
   padding-left: 36px;
@@ -23,13 +19,12 @@
 .gifts__text {
   color: $basic-extra-dark;
   grid-area: gifts-text;
-  margin: 0 0 24px;
+  margin: 0 0 28px;
 }
 
 .gifts__button {
   grid-area: gifts-button;
-  margin-left: -4px;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   align-self: end;
 }
 

@@ -1,5 +1,5 @@
 .hero-slider {
-  padding-top: 21px;
+  padding-top: 22px;
   padding-left: 70px;
   display: grid;
   grid-template-columns: 430px auto;
@@ -24,12 +24,7 @@
   font-size: 18px;
   line-height: 24px;
   color: $basic-extra-dark;
-  margin: 0 0 44px;
-}
-
-.hero-slider__button {
-  margin-left: -4px;
-  margin-bottom: -7px;
+  margin: 0 0 48px;
 }
 
 .hero-slider__images {
