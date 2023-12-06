@@ -1,23 +1,29 @@
+.form__field-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
+}
+
+.form__field-group--tooltip {
+  column-gap: 4px;
+}
+
 .form__label {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: $basic-extra-dark;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-}
-
-.form__label--tooltip {
-  column-gap: 4px;
 }
 
 .form__input {
+  font-family: inherit;
   background-color: $white;
   border-radius: 4px;
-  padding: 14px 16px;
+  padding: 15px 16px;
   width: 100%;
+  border: 1px solid $basic-neutral;
 
   &::placeholder
     {

@@ -3,7 +3,7 @@
   background-color: $basic-extra-light;
   width: 270px;
   min-height: 281px;
-  margin-top: 51px;
+  margin-top: 52px;
   padding: 133px 40px 24px;
   position: relative;
   border-radius: 8px;
@@ -43,4 +43,26 @@
   min-width: 32px;
   min-height: 32px;
   border: 2px solid $special-extra-bright;
+  outline: transparent;
+  box-shadow: none;
+
+    &:focus {
+    background-color: $special-extra-bright;
+    border-color: $basic-extra-dark;
+    outline: transparent;
+  }
+
+  &:active {
+    background-color: $special-extra-light;
+    color: $basic-extra-dark;
+    outline: transparent;
+  }
+
+  &:disabled {
+    color: $basic-dark;
+    background-color: $basic-neutral;
+    outline: transparent;
+    border-color: $basic-neutral;
+    pointer-events: none;
+  }
 }

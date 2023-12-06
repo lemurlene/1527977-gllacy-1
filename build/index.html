@@ -424,30 +424,38 @@
             Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.
           </p>
           <form class="delivery__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form__label form__label--tooltip">
-              Дата
-              <button class="tooltip" type="button" aria-labelledby="tooltip-delivery-date">
+            <p class="form__field-group form__field-group--tooltip">
+              <label class="form__label">
+                Дата
+              </label>
+              <span class="tooltip">
+                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-delivery-date"></button>
                 <span class="tooltip__text" role="tooltip" id="tooltip-delivery-date">
                   Введите дату:<br>
                   день, месяц и год
                 </span>
-              </button>
+              </span>
               <input class="form__input" type="text" name="delivery-date" placeholder="01.04.2020">
-            </label>
-             <label class="form__label">
-              Телефон
+            </p>
+            <p class="form__field-group">
+              <label class="form__label">
+                Телефон
+              </label>
               <input class="form__input" type="text" name="delivery-phone" placeholder="+7 800 999-00-00">
-            </label>
-            <label class="form__label form__label--tooltip delivery__form-address-label">
-              Адрес
-              <button class="tooltip" type="button" aria-labelledby="tooltip-delivery-address">
+            </p>
+            <p class="form__field-group form__field-group--tooltip delivery__form-address">
+              <label class="form__label">
+                Адрес
+              </label>
+              <span class="tooltip">
+                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-delivery-address"></button>
                 <span class="tooltip__text" role="tooltip" id="tooltip-delivery-address">
                   Введите название<br>
                   улицы, дома и квартиры
                 </span>
-              </button>
-            <input class="form__input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
-            </label>
+              </span>
+              <input class="form__input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+            </p>
             <button class="form__button button button--color delivery__form-button" type="submit">
               Отправить
             </button>

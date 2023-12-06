@@ -34,12 +34,12 @@
   gap: 20px 16px;
 }
 
-.delivery__form-address-label {
+.delivery__form-address {
   grid-column: 1/-1;
 }
 
 .delivery__form-button {
   grid-column: 1/-1;
   justify-self: center;
-  margin-top: 8px
+  margin-top: 12px;
 }
