@@ -4,6 +4,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, max-content);
+  justify-content: center;
   row-gap: 8px;
 }
 

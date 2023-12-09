@@ -19,9 +19,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 24px;
-  height: 24px;
+  min-width: 23px;
+  min-height: 23px;
   border-radius: 50px;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: rgba($basic-extra-light, 0.5);
+  }
+
+  &:focus-within {
+    background-color: rgba($basic-extra-light, 0.3);
+    border-color: $basic-extra-dark;
+    outline: transparent;
+  }
+
+  &:active {
+    background-color: rgba($basic-extra-light, 0.5);
+    border-color: $basic-extra-light;
+  }
+}
+
+.catalog-pagination__item--current {
+  background-color: $basic-extra-light;
 }
 
 .catalog-pagination__toggle {
@@ -38,11 +58,11 @@
   opacity: 0.3;
 }
 
-.catalog-pagination__item--current {
-  background-color: $basic-extra-light;
-}
-
 .catalog-pagination__link {
   line-height: 20px;
   color: $basic-extra-dark;
+
+  &:focus {
+    outline: transparent;
+  }
 }

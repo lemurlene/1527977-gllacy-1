@@ -1,6 +1,7 @@
 .main-nav {
-  flex-grow: 1;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 160px 268px;
   align-items: center;
   color: $basic-extra-dark;
   gap: 10px;
@@ -38,11 +39,8 @@
 }
 
 .main-nav__link--phone {
-  margin-left: auto;
-  min-width: 148px;
   font-weight: 700;
   padding: 6px;
-  flex-shrink: 0;
 }
 
 .main-nav__link--user {
