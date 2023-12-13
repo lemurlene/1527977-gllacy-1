@@ -103,7 +103,7 @@
         <h2 class="visually-hidden">Сортировка и фильтрация</h2>
         <form class="catalog__form catalog-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="catalog-form__group catalog-form__group--sorting">
-            <label for="sorting">
+            <label class="catalog-form__title catalog-form__title--select" for="sorting">
               Сортировка:
             </label>
             <select class="catalog-form__item catalog-form__item--select" name="sorting" id="sorting">
@@ -113,41 +113,52 @@
             </select>
           </div>
           <fieldset class="catalog-form__group range">
-            <legend class="catalog-form__title">Цена:</legend>
-            <label class="catalog-form__label range__label">
-              <span class="visually-hidden">от</span>
-              <input class="catalog-form__input range__input" type="number" name="min-price" value="100">₽
-            </label>
-            <span>-</span>
-            <label class="catalog-form__label range__label">
-              <span class="visually-hidden">до</span>
-              <input class="catalog-form__input range__input" type="number" name="max-price" value="500">₽
-            </label>
+            <legend class="catalog-form__title">Цена:
+              <label class="catalog-form__label range__label">
+                <span class="visually-hidden">от</span>
+                <input class="catalog-form__input range__input" type="number" name="min-price" value="100">₽&nbsp;&ndash;
+              </label>
+              <label class="catalog-form__label range__label">
+                <span class="visually-hidden">до</span>
+                <input class="catalog-form__input range__input" type="number" name="max-price" value="500">₽
+              </label>
+            </legend>
+            <div class="catalog-form__list range__toggles">
+              <div class="range__scale">
+                <div class="range__bar" style="left: 40px; width: 56px">
+                  <button class="range__toggle range__toggle--min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range__toggle range__toggle--max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
           </fieldset>
           <fieldset class="catalog-form__group">
             <legend class="catalog-form__title">Жирность:</legend>
             <ul class="catalog-form__list list-flex">
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="radio" name="fat-content" value="0">
+                  <input class="visually-hidden control__input" type="radio" name="fat-content" value="0">
                   0%
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="radio" name="fat-content" value="till-10" checked>
+                  <input class="visually-hidden control__input" type="radio" name="fat-content" value="till-10" checked>
                   До 10%
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="radio" name="fat-content" value="till-30">
+                  <input class="visually-hidden control__input" type="radio" name="fat-content" value="till-30">
                   До 30%
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="radio" name="fat-content" value="above-30">
+                  <input class="visually-hidden control__input" type="radio" name="fat-content" value="above-30">
                   Выше 30%
                 </label>
               </li>
@@ -158,31 +169,31 @@
             <ul class="catalog-form__list list-flex">
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="checkbox" name="chocolate" checked>
+                  <input class="visually-hidden control__input" type="checkbox" name="chocolate" checked>
                   Шоколадные
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="checkbox" name="sugar-sprinkles" checked>
+                  <input class="visually-hidden control__input" type="checkbox" name="sugar-sprinkles" checked>
                   Сахарные посыпки
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="checkbox" name="fruits">
+                  <input class="visually-hidden control__input" type="checkbox" name="fruits">
                   Фрукты
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="checkbox" name="syrups">
+                  <input class="visually-hidden control__input" type="checkbox" name="syrups">
                   Сиропы
                 </label>
               </li>
               <li class="catalog-form__item">
                 <label class="control">
-                  <input class="control__input" type="checkbox" name="jams">
+                  <input class="visually-hidden control__input" type="checkbox" name="jams">
                   Джемы
                 </label>
               </li>
