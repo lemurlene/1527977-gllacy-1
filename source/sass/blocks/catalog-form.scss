@@ -1,7 +1,7 @@
 .catalog-form {
   font-size: 14px;
-  line-height: 20px;
   color: $basic-extra-dark;
+  line-height: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px 24px;
@@ -9,6 +9,18 @@
 
 .catalog-form__group {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-form__title {
+  margin: 0 auto 10px 16px;
+  padding: 0;
+  line-height: 18px;
+}
+
+.catalog-form__title--select {
+  display: block;
 }
 
 .catalog-form__list {
@@ -19,17 +31,24 @@
 
 .catalog-form__item {
   text-transform: lowercase;
-  padding: 10px 8px;
+  padding: 8px 8px;
   cursor: pointer;
 }
 
 .catalog-form__item--select {
   display: block;
   min-width: 196px;
+  padding: 6px 14px;
+  font: inherit;
+  color: inherit;
   border-radius: 20px;
   background-color: rgba($basic-extra-light, 0.3);
   border: 2px solid rgba($basic-extra-light, 0.3);
   background-clip: padding-box;
+  background-image: url("../images/pictures/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  appearance: none;
 
   &:hover {
     background-color: rgba($basic-extra-light, 0.5);
@@ -40,6 +59,11 @@
     background-color: rgba($basic-extra-light, 0.4);
     border-color: $basic-extra-light;
   }
+}
+
+.catalog-form__input {
+  font: inherit;
+  color: inherit;
 }
 
 .catalog-form__button {

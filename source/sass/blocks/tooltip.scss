@@ -8,11 +8,9 @@
   align-content: center;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    .tooltip__text {
-      display: block;
-    }
+  &:hover + .tooltip__text,
+  &:focus + .tooltip__text {
+    display: block;
   }
 }
 

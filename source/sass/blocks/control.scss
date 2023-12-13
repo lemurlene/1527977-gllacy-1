@@ -1,0 +1,14 @@
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control__input {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #242424;
+}
