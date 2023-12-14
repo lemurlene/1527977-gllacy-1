@@ -1,14 +1,55 @@
-.control {
+.control{
   position: relative;
+}
+
+.control__label {
   display: block;
-  padding-left: 36px;
+  padding-left: 24px;
+  cursor: pointer;
 }
 
 .control__input {
+  margin-left: 0;
+  appearance: none;
   position: absolute;
-  top: 2px;
-  left: 0;
   width: 16px;
   height: 16px;
-  border: 2px solid #242424;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:disabled::before {
+    cursor: not-allowed;
+/*
+    radio 40%
+    chek 50%
+    */
+  }
+}
+
+.control__input--radio {
+  &::before {
+    background-image: url("../images/pictures/radio.svg");
+  }
+  &:checked::before {
+  background-image: url("../images/pictures/radio-checked.svg");
+  }
+}
+
+.control__input--checkbox {
+  &::before {
+  background-image: url("../images/pictures/checkbox.svg");
+  }
+
+  &:checked::before {
+  background-image: url("../images/pictures/checkbox-checked.svg");
+  }
 }
