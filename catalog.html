@@ -77,7 +77,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main page-main--inner catalog">
+    <main class="page-main catalog">
       <h1 class="visually-hidden">Каталог</h1>
       <header class="page-main__header">
         <ul class="breadcrumbs list-flex">
@@ -99,7 +99,7 @@
         </ul>
         <h2 class="title-h2 catalog__part-title">Сливочное мороженое</h2>
       </header>
-      <section class="sorting-filters">
+      <section>
         <h2 class="visually-hidden">Сортировка и фильтрация</h2>
         <form class="catalog__form catalog-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="catalog-form__group catalog-form__group--sorting">
@@ -113,7 +113,7 @@
             </select>
           </div>
           <fieldset class="catalog-form__group range">
-            <legend class="catalog-form__title">Цена:
+            <legend class="catalog-form__title range__legend">Цена:
               <label class="catalog-form__label range__label">
                 <span class="visually-hidden">от</span>
                 <input class="catalog-form__input range__input" type="number" name="min-price" value="100">₽&nbsp;&ndash;
@@ -138,25 +138,25 @@
           <fieldset class="catalog-form__group">
             <legend class="catalog-form__title">Жирность:</legend>
             <ul class="catalog-form__list list-flex">
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control">
                 <input class="control__input control__input--radio" type="radio" name="fat-content" id="zero" value="0">
                 <label class="control__label" for="zero">
                   0%
                 </label>
               </li>
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control">
                 <input class="control__input control__input--radio" type="radio" name="fat-content" id="till-10" value="till-10" checked>
                 <label class="control__label" for="till-10">
                   До 10%
                 </label>
               </li>
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control">
                 <input class="control__input control__input--radio" type="radio" name="fat-content" id="till-30" value="till-30">
                 <label class="control__label" for="till-30">
                   До 30%
                 </label>
               </li>
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control">
                 <input class="control__input control__input--radio" type="radio" name="fat-content" id="above-30" value="above-30">
                 <label class="control__label" for="above-30">
                   Выше 30%
@@ -167,31 +167,31 @@
           <fieldset class="catalog-form__group">
             <legend class="catalog-form__title">Наполнители:</legend>
             <ul class="catalog-form__list list-flex">
-              <li class="catalog-form__item control">
+              <li class="catalog-form__item control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
                 <label class="control__label" for="chocolate">
                   Шоколадные
                 </label>
               </li>
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="sugar-sprinkles" id="sugar-sprinkles" checked>
                 <label class="control__label" for="sugar-sprinkles">
                   Сахарные посыпки
                 </label>
               </li>
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="fruits" id="fruits">
                 <label class="control__label" for="fruits">
                   Фрукты
                 </label>
               </li>
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="syrups" id="syrups">
                 <label class="control__label" for="syrups">
                   Сиропы
                 </label>
               </li>
-              <li class="catalog-form__item">
+              <li class="catalog-form__item control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="jams" id="jams">
                 <label class="control__label" for="jams">
                   Джемы
