@@ -2,14 +2,19 @@
   position: relative;
 }
 
+.control--checkbox {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .control__label {
   display: block;
-  padding-left: 24px;
+  padding-left: 25px;
   cursor: pointer;
 }
 
 .control__input {
-  margin-left: 0;
+  margin: 2px 0;
   appearance: none;
   position: absolute;
   width: 16px;
@@ -28,10 +33,6 @@
 
   &:disabled::before {
     cursor: not-allowed;
-/*
-    radio 40%
-    chek 50%
-    */
   }
 }
 
@@ -42,6 +43,9 @@
   &:checked::before {
   background-image: url("../images/pictures/radio-checked.svg");
   }
+  &:disabled::before {
+    opacity: 0.4;
+  }
 }
 
 .control__input--checkbox {
@@ -51,5 +55,9 @@
 
   &:checked::before {
   background-image: url("../images/pictures/checkbox-checked.svg");
+  }
+
+  &:disabled::before {
+    opacity: 0.5;
   }
 }

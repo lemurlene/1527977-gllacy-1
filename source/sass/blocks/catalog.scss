@@ -1,3 +1,9 @@
+.catalog {
+  row-gap: 40px;
+  padding: 32px 0 40px;
+  border-bottom: 1px solid rgba($basic-extra-light, 0.3);
+}
+
 .catalog__part-title {
   text-align: start;
   margin: auto 0;
