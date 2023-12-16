@@ -1,0 +1,74 @@
+.cart__list {
+  row-gap: 24px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $basic-light;
+  font-size: 18px;
+}
+
+.cart__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 46px 148px 86px 16px;
+  gap: 16px;
+  align-items: center;
+}
+
+.cart__item-photo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.cart__item-info {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cart__item-title {
+  font-size: inherit;
+  margin: 0;
+}
+
+.cart__item-calculation {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-neutral;
+}
+
+.cart__button-delete {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/pictures/cross.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.cart__total {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.cart__empty-popover {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 288px;
+  text-align: center;
+}
