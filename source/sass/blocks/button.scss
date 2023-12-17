@@ -100,3 +100,23 @@
 .button--spinner-light::after {
   background-image: url("../images/pictures/spinner-light.svg");
 }
+
+.button--cross {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/pictures/cross.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
