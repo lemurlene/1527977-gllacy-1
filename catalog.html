@@ -55,13 +55,41 @@
               </span>
             </a>
           </li>
-          <li class="user-nav__item entry">
+          <li class="user-nav__item authorization">
             <a class="main-nav__link main-nav__link--user note" href="#">
-              <svg class="entry__icon" width="16" height="16" aria-hidden="true">
+              <svg class="authorization__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#entry"></use>
               </svg>
               Вход
             </a>
+            <div class="popover authorization__popover wrapper-extra-light-br-4 shadow-big">
+              <div class="popover__content">
+                <h2 class="popover__title title-h3">Личный кабинет</h2>
+                <form class="form authorization__form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="form__field-group authorization__form-item">
+                    <label class="visually-hidden" for="authorization-email">
+                      Электронная почта
+                    </label>
+                    <input class="form__input authorization__form-input" type="email" name="authorization-email"
+                    id="authorization-email" placeholder="email@example.com"  aria-label="Обязательное поле" required>
+                  </p>
+                  <p class="form__field-group authorization__form-item">
+                    <label class="visually-hidden" for="authorization-password">
+                      Пароль
+                    </label>
+                    <input class="form__input authorization__password" type="password" name="authorization-password"
+                    id="authorization-password" minlength="6" value="123456" aria-label="Обязательное поле" required>
+                  </p>
+                  <button class="button button--color authorization__form-button" type="submit">
+                    Войти
+                  </button>
+                  <div class="authorization__help">
+                    <a class="note authorization__help-link" href="">Забыли пароль?</a>
+                    <a class="note authorization__help-link" href="">Регистрация</a>
+                  </div>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="user-nav__item cart">
             <a class="main-nav__link main-nav__link--user note" href="#">
