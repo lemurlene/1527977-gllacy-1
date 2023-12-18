@@ -1,3 +1,7 @@
+.tooltip {
+  position: relative;
+}
+
 .tooltip__toggle {
   width: 14px;
   height: 14px;
@@ -17,14 +21,14 @@
 .tooltip__text {
   display: none;
   position: absolute;
+  top: -12px;
+  left: 24px;
   z-index: 1;
   background-color: $white;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   padding: 9px;
-  margin-left: 18px;
-  margin-top: 16px;
   width: max-content;
   border-radius: 2px;
   border: 1px solid $basic-neutral;

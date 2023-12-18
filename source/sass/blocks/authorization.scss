@@ -1,0 +1,32 @@
+.authorization__popover {
+  width: 420px;
+}
+
+.authorization__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.authorization__form-item {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.authorization__form-input::placeholder {
+  color: $basic-extra-dark;
+}
+
+
+.authorization__form-button {
+  margin: 16px 19px 4px 0;
+}
+
+.authorization__help {
+  margin-top: 14px;
+}
+
+.authorization__help-link {
+  text-decoration: underline solid $basic-extra-dark;
+  padding: 2px 4px;
+  cursor: pointer;
+}

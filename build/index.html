@@ -55,13 +55,41 @@
               </span>
             </a>
           </li>
-          <li class="user-nav__item entry">
+          <li class="user-nav__item authorization">
             <a class="main-nav__link main-nav__link--user note" href="#">
-              <svg class="entry__icon" width="16" height="16" aria-hidden="true">
+              <svg class="authorization__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#entry"></use>
               </svg>
               Вход
             </a>
+            <div class="popover authorization__popover wrapper-extra-light-br-4 shadow-big">
+              <div class="popover__content">
+                <h2 class="popover__title title-h3">Личный кабинет</h2>
+                <form class="form authorization__form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="form__field-group authorization__form-item">
+                    <label class="visually-hidden" for="authorization-email">
+                      Электронная почта
+                    </label>
+                    <input class="form__input authorization__form-input" type="email" name="authorization-email"
+                    id="authorization-email" placeholder="email@example.com"  aria-label="Обязательное поле" required>
+                  </p>
+                  <p class="form__field-group authorization__form-item">
+                    <label class="visually-hidden" for="authorization-password">
+                      Пароль
+                    </label>
+                    <input class="form__input authorization__password" type="password" name="authorization-password"
+                    id="authorization-password" minlength="6" value="123456" aria-label="Обязательное поле" required>
+                  </p>
+                  <button class="button button--color authorization__form-button" type="submit">
+                    Войти
+                  </button>
+                  <div class="authorization__help">
+                    <a class="note authorization__help-link" href="">Забыли пароль?</a>
+                    <a class="note authorization__help-link" href="">Регистрация</a>
+                  </div>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="user-nav__item cart">
             <a class="main-nav__link main-nav__link--user note" href="#">
@@ -466,7 +494,8 @@
                 <span class="visually-hidden">
                   Ваш e-mail
                 </span>
-                <input class="form__input subscribe__input" type="email" name="email" placeholder="email@example.com">
+                <input class="form__input subscribe__input" type="email" name="subscribe-email"
+                id="subscribe-email" placeholder="email@example.com" required>
               </label>
               <button class="form__button button button--color subscribe__button" type="submit">
                 Отправить
@@ -489,7 +518,7 @@
           </p>
           <form class="delivery__form form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="form__field-group form__field-group--tooltip">
-              <label class="form__label">
+              <label class="form__label" for="delivery-date">
                 Дата
               </label>
               <span class="tooltip">
@@ -499,16 +528,18 @@
                   день, месяц и год
                 </span>
               </span>
-              <input class="form__input" type="text" name="delivery-date" placeholder="01.04.2020">
+              <input class="form__input" type="text" name="delivery-date"
+              id="delivery-date" placeholder="01.04.2020">
             </p>
             <p class="form__field-group">
-              <label class="form__label">
+              <label class="form__label" for="delivery-phone">
                 Телефон
               </label>
-              <input class="form__input" type="text" name="delivery-phone" placeholder="+7 800 999-00-00">
+              <input class="form__input" type="text" name="delivery-phone"
+              id="delivery-phone" placeholder="+7 800 999-00-00" required>
             </p>
             <p class="form__field-group form__field-group--tooltip delivery__form-address">
-              <label class="form__label">
+              <label class="form__label" for="delivery-address">
                 Адрес
               </label>
               <span class="tooltip">
@@ -518,7 +549,8 @@
                   улицы, дома и квартиры
                 </span>
               </span>
-              <input class="form__input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+              <input class="form__input" type="text" name="delivery-address"
+              id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
             </p>
             <button class="button button--color delivery__form-button" type="submit">
               Отправить
@@ -640,13 +672,15 @@
             <label class="visually-hidden" for="feedback-email">
               Электронная почта
             </label>
-            <input class="form__input" type="text" name="feedback-email" id="feedback-email" placeholder="email@example.com" aria-label="Обязательное поле" required>
+            <input class="form__input" type="text" name="feedback-email"
+            id="feedback-email" placeholder="email@example.com" aria-label="Обязательное поле" required>
           </p>
           <p class="form__field-group">
             <label class="visually-hidden" for="feedback-message">
               Ваше сообщение
             </label>
-            <textarea class="form__input form__textarea" type="text" name="feedback-message" id="feedback-message" placeholder="В свободной форме"></textarea>
+            <textarea class="form__input form__textarea" type="text" name="feedback-message"
+            id="feedback-message" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button button--color feedback__button" type="submit">
             Отправить
