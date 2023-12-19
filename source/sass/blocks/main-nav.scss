@@ -7,6 +7,15 @@
   gap: 10px;
 }
 
+.main-nav__item {
+  position: relative;
+
+  &:hover .popover,
+  &:focus-within .popover {
+    display: block;
+  }
+}
+
 .main-nav__link {
   position: relative;
   display: flex;

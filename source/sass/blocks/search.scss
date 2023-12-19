@@ -1,0 +1,34 @@
+.search__popover {
+  width: 356px;
+  min-height: 96px;
+  padding: 24px 16px;
+}
+
+.search__form {
+  width: 100%;
+}
+
+.search__button-reset {
+  position: absolute;
+  right: 28px;
+  display: none;
+}
+
+.search__form-input {
+  position: relative;
+  caret-color: inherit;
+
+  &:not(:placeholder-shown) + .search__button-reset  {
+    display: flex;
+    opacity: 0.4;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $basic-neutral;
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+}
