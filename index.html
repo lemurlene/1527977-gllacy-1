@@ -23,12 +23,43 @@
       <nav class="main-nav">
         <ul class="main-nav__list list-flex">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--open" href="catalog.html">
               Каталог
               <svg class="main-nav__link-icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#arrow-down"></use>
               </svg>
             </a>
+            <div class="popover subcatalog__popover wrapper-extra-light-br-4 shadow-medium">
+              <div class="popover__content">
+                <ul class="list-flex subcatalog__list">
+                  <li class="subcatalog__item">
+                    <a class="note subcatalog__link subcatalog__link--hero">
+                      Новинки
+                    </a>
+                  </li>
+                  <li class="subcatalog__item">
+                    <a class="note subcatalog__link">
+                      Сливочное
+                    </a>
+                  </li>
+                  <li class="subcatalog__item">
+                    <a class="note subcatalog__link">
+                      Щербеты
+                    </a>
+                  </li>
+                  <li class="subcatalog__item">
+                    <a class="note subcatalog__link">
+                      Фруктовый лед
+                    </a>
+                  </li>
+                  <li class="subcatalog__item">
+                    <a class="note subcatalog__link">
+                      Мелорин
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">
@@ -45,7 +76,7 @@
           +7 800 555-86-28
         </a>
         <ul class="user-nav list-flex">
-          <li class="user-nav__item search">
+          <li class="main-nav__item user-nav__item search">
             <a class="main-nav__link main-nav__link--user main-nav__link--user-no-text" href="#">
               <svg class="search__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#search"></use>
@@ -54,8 +85,24 @@
                 Поиск
               </span>
             </a>
+            <div class="popover search__popover wrapper-extra-light-br-4 shadow-medium">
+              <div class="popover__content">
+                <h2 class="visually-hidden">Поиск по сайту</h2>
+                <search role="search" class="search__form">
+                  <form class="form" method="post" action="https://echo.htmlacademy.ru/">
+                    <p class="form__field-group">
+                      <label class="visually-hidden" for="search-main">
+                      </label>
+                      <input class="form__input search__form-input" type="search" name="search-main"
+                      id="search-main"  placeholder="Поиск по сайту">
+                      <button class="button--cross search__button-reset" type="reset"></button>
+                    </p>
+                  </form>
+                </search>
+              </div>
+            </div>
           </li>
-          <li class="user-nav__item authorization">
+          <li class="main-nav__item user-nav__item authorization">
             <a class="main-nav__link main-nav__link--user note" href="#">
               <svg class="authorization__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#entry"></use>
@@ -71,7 +118,7 @@
                       Электронная почта
                     </label>
                     <input class="form__input authorization__form-input" type="email" name="authorization-email"
-                    id="authorization-email" placeholder="email@example.com"  aria-label="Обязательное поле" required>
+                    id="authorization-email" placeholder="email@example.com" aria-label="Обязательное поле" required>
                   </p>
                   <p class="form__field-group authorization__form-item">
                     <label class="visually-hidden" for="authorization-password">
@@ -91,7 +138,7 @@
               </div>
             </div>
           </li>
-          <li class="user-nav__item cart">
+          <li class="main-nav__item user-nav__item cart">
             <a class="main-nav__link main-nav__link--user note" href="#">
               <svg class="cart__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#cart"></use>
@@ -102,7 +149,7 @@
               <span class="cart__count">2 товара</span>
             </a>
             <div class="popover wrapper-extra-light-br-4 shadow-big">
-              <div class="popover__content">
+              <div class="popover__content ">
                 <h2 class="popover__title title-h3">Корзина</h2>
                 <ul class="cart__list list-flex">
                   <li class="cart__item">
