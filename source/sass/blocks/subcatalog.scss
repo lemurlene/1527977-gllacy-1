@@ -20,6 +20,7 @@
 .subcatalog__item--current {
   color: $basic-extra-light;
   background-color: $special-bright;
+  pointer-events: none;
 }
 
 .subcatalog__link {

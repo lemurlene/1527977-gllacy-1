@@ -8,6 +8,14 @@
   display: none;
 }
 
+.popover--open {
+  display: block;
+}
+
+.popover--close {
+  display: none;
+}
+
 .popover__content {
   height: 100%;
   display: flex;

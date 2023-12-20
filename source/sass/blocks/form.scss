@@ -35,15 +35,6 @@
     outline: 1px solid $basic-extra-dark;
   }
 
-  &:invalid {
-    border-color: $status-error;
-  }
-
-  &:hover:invalid,
-  &:focus:invalid {
-    outline-color: $status-error;
-  }
-
   &:disabled,
   &:disabled:hover {
     background-color: $basic-light;
@@ -57,6 +48,24 @@
   &::placeholder {
     color: $basic-neutral;
     font-size: 16px;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: $status-error;
+
+    &:hover,
+    &:focus {
+      outline-color: $status-error;
+    }
+  }
+}
+
+.form__input--invalid {
+  border-color: $status-error;
+
+  &:hover,
+  &:focus {
+    outline-color: $status-error;
   }
 }
 

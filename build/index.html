@@ -22,8 +22,8 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list list-flex">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--open" href="catalog.html">
+          <li class="main-nav__item subcatalog">
+            <a class="main-nav__link" href="catalog.html">
               Каталог
               <svg class="main-nav__link-icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#arrow-down"></use>
@@ -89,12 +89,16 @@
               <div class="popover__content">
                 <h2 class="visually-hidden">Поиск по сайту</h2>
                 <search role="search" class="search__form">
+                  <!-- https://validator.w3.org/ ругается, но в Firefox и Chrome отражается нормально - это критично?
+                    Error: Element search not allowed as child of element div in this context.
+                    (Suppressing further errors from this subtree.)
+                  -->
                   <form class="form" method="post" action="https://echo.htmlacademy.ru/">
                     <p class="form__field-group">
                       <label class="visually-hidden" for="search-main">
                       </label>
                       <input class="form__input search__form-input" type="search" name="search-main"
-                      id="search-main"  placeholder="Поиск по сайту">
+                      id="search-main"  placeholder="Поиск по сайту" required>
                       <button class="button--cross search__button-reset" type="reset"></button>
                     </p>
                   </form>
@@ -154,6 +158,11 @@
                 <ul class="cart__list list-flex">
                   <li class="cart__item">
                     <pictures>
+                      <!--
+                        и тут тоже:
+                        Error: Element pictures not allowed as child of element li in this context.
+                        (Suppressing further errors from this subtree.)
+                      -->
                       <source type="image/webp" srcset="images/products/raspberry-cart.webp 1x, images/products/raspberry-cart@2x.webp 2x">
                       <img class="cart__item-photo" src="images/products/raspberry-cart.jpg" srcset="images/products/raspberry-cart@2x.jpg 2x"
                       width="46" height="46" alt="Шарик малинового цвета">
@@ -582,7 +591,7 @@
               <label class="form__label" for="delivery-phone">
                 Телефон
               </label>
-              <input class="form__input" type="text" name="delivery-phone"
+              <input class="form__input" type="tel" name="delivery-phone"
               id="delivery-phone" placeholder="+7 800 999-00-00" required>
             </p>
             <p class="form__field-group form__field-group--tooltip delivery__form-address">
@@ -704,7 +713,7 @@
     </footer>
     <div class="modal">
       <div class="modal__window modal__window--feedback wrapper-extra-light-br-8 shadow-big">
-        <button class="button--cross modal__close-button">
+        <button class="button--cross modal__close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <h2 class="title-h3 modal__title">Мы обязательно ответим вам!</h2>
@@ -719,15 +728,15 @@
             <label class="visually-hidden" for="feedback-email">
               Электронная почта
             </label>
-            <input class="form__input" type="text" name="feedback-email"
+            <input class="form__input" type="email" name="feedback-email"
             id="feedback-email" placeholder="email@example.com" aria-label="Обязательное поле" required>
           </p>
           <p class="form__field-group">
             <label class="visually-hidden" for="feedback-message">
               Ваше сообщение
             </label>
-            <textarea class="form__input form__textarea" type="text" name="feedback-message"
-            id="feedback-message" placeholder="В свободной форме"></textarea>
+            <textarea class="form__input form__textarea" name="feedback-message"
+            id="feedback-message" placeholder="В свободной форме" required></textarea>
           </p>
           <button class="button button--color feedback__button" type="submit">
             Отправить
