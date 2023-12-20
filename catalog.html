@@ -22,8 +22,8 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list list-flex">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--open" href="catalog.html">
+          <li class="main-nav__item subcatalog">
+            <a class="main-nav__link" href="catalog.html">
               Каталог
               <svg class="main-nav__link-icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#arrow-down"></use>
@@ -37,7 +37,7 @@
                       Новинки
                     </a>
                   </li>
-                  <li class="subcatalog__item">
+                  <li class="subcatalog__item subcatalog__item--current">
                     <a class="note subcatalog__link">
                       Сливочное
                     </a>
@@ -94,7 +94,7 @@
                       <label class="visually-hidden" for="search-main">
                       </label>
                       <input class="form__input search__form-input" type="search" name="search-main"
-                      id="search-main"  placeholder="Поиск по сайту">
+                      id="search-main"  placeholder="Поиск по сайту" required>
                       <button class="button--cross search__button-reset" type="reset"></button>
                     </p>
                   </form>
@@ -265,14 +265,15 @@
             <div class="catalog-form__list range__toggles">
               <div class="range__scale">
                 <div class="range__bar" style="left: 40px; width: 56px">
-                  <button class="range__toggle range__toggle--min">
+                  <button class="range__toggle range__toggle--min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="range__toggle range__toggle--max">
+                  <button class="range__toggle range__toggle--max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
               </div>
+            </div>
           </fieldset>
           <fieldset class="catalog-form__group">
             <legend class="catalog-form__title">Жирность:</legend>
