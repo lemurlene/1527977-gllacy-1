@@ -17,13 +17,13 @@
   <body class="page-body page-wrapper">
     <header class="page-header">
       <a class="page-header__logo page-header__logo--disabled" href="" aria-current="page">
-        <img src="images/pictures/gllacy.svg" width="137" height="56" aria-hidden="true"
+        <img class="display-block" src="images/pictures/gllacy.svg" width="137" height="56" aria-hidden="true"
         alt="Логотип Глейси">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list list-flex">
           <li class="main-nav__item subcatalog">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link link" href="catalog.html">
               Каталог
               <svg class="main-nav__link-icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#arrow-down"></use>
@@ -33,27 +33,27 @@
               <div class="popover__content">
                 <ul class="list-flex subcatalog__list">
                   <li class="subcatalog__item">
-                    <a class="note subcatalog__link subcatalog__link--hero">
+                    <a class="note link subcatalog__link subcatalog__link--hero">
                       Новинки
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="note subcatalog__link">
+                    <a class="note link subcatalog__link">
                       Сливочное
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="note subcatalog__link">
+                    <a class="note link subcatalog__link">
                       Щербеты
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="note subcatalog__link">
+                    <a class="note link subcatalog__link">
                       Фруктовый лед
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="note subcatalog__link">
+                    <a class="note link subcatalog__link">
                       Мелорин
                     </a>
                   </li>
@@ -62,22 +62,22 @@
             </div>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link link" href="#">
               Доставка и оплата
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link link" href="#">
               О компании
             </a>
           </li>
         </ul>
-        <a class="main-nav__link main-nav__link--phone" href="tel:+78005558628">
+        <a class="main-nav__link link main-nav__link--phone" href="tel:+78005558628">
           +7 800 555-86-28
         </a>
         <ul class="user-nav list-flex">
           <li class="main-nav__item user-nav__item search">
-            <a class="main-nav__link main-nav__link--user main-nav__link--user-no-text" href="#">
+            <a class="main-nav__link link main-nav__link--user main-nav__link--user-no-text" href="#">
               <svg class="search__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#search"></use>
               </svg>
@@ -107,7 +107,7 @@
             </div>
           </li>
           <li class="main-nav__item user-nav__item authorization">
-            <a class="main-nav__link main-nav__link--user note" href="#">
+            <a class="main-nav__link link main-nav__link--user note" href="#">
               <svg class="authorization__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#entry"></use>
               </svg>
@@ -135,15 +135,15 @@
                     Войти
                   </button>
                   <div class="authorization__help">
-                    <a class="note authorization__help-link" href="">Забыли пароль?</a>
-                    <a class="note authorization__help-link" href="">Регистрация</a>
+                    <a class="link note authorization__help-link" href="">Забыли пароль?</a>
+                    <a class="link note authorization__help-link" href="">Регистрация</a>
                   </div>
                 </form>
               </div>
             </div>
           </li>
           <li class="main-nav__item user-nav__item cart">
-            <a class="main-nav__link main-nav__link--user note" href="#">
+            <a class="main-nav__link link main-nav__link--user note" href="#">
               <svg class="cart__icon" width="16" height="16" aria-hidden="true">
                 <use xlink:href="images/icons/stack.svg#cart"></use>
               </svg>
@@ -158,16 +158,15 @@
                 <ul class="cart__list list-flex">
                   <li class="cart__item">
                     <pictures>
-                      <!--
-                        и тут тоже:
+                      <!-- и тут тоже:
                         Error: Element pictures not allowed as child of element li in this context.
                         (Suppressing further errors from this subtree.)
                       -->
                       <source type="image/webp" srcset="images/products/raspberry-cart.webp 1x, images/products/raspberry-cart@2x.webp 2x">
-                      <img class="cart__item-photo" src="images/products/raspberry-cart.jpg" srcset="images/products/raspberry-cart@2x.jpg 2x"
+                      <img class="display-block cart__item-photo" src="images/products/raspberry-cart.jpg" srcset="images/products/raspberry-cart@2x.jpg 2x"
                       width="46" height="46" alt="Шарик малинового цвета">
                     </pictures>
-                    <a class="cart__item-info">
+                    <a class="cart__item-info link">
                       <h3 class="cart__item-title">Малинка</h3>
                       <p class="cart__item-calculation">
                         <span class="cart__item-quantity">1</span>
@@ -187,10 +186,10 @@
                   <li class="cart__item">
                     <pictures>
                       <source type="image/webp" srcset="images/products/bubble-gum-cart.webp 1x, images/products/bubble-gum-cart@2x.webp 2x">
-                      <img class="cart__item-photo" src="images/products/bubble-gum-cart.jpg" srcset="images/products/bubble-gum-cart@2x.jpg 2x"
+                      <img class="display-block cart__item-photo" src="images/products/bubble-gum-cart.jpg" srcset="images/products/bubble-gum-cart@2x.jpg 2x"
                       width="46" height="46" alt="Шарик бирюзового цвета с разноцветными горошинками">
                     </pictures>
-                    <a class="cart__item-info">
+                    <a class="cart__item-info link">
                       <h3 class="cart__item-title">Бабл-гам</h3>
                       <p class="cart__item-calculation">
                         <span class="cart__item-quantity">1,5</span>
@@ -235,7 +234,7 @@
               Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом
               – это идеальный десерт для всей семьи.
             </p>
-            <a class="button hero-slider__button" href="catalog.html">
+            <a class="link button hero-slider__button" href="catalog.html">
               Заказать
             </a>
           </div>
@@ -245,7 +244,7 @@
               Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
               и наслаждение даже в самый жаркий летний день.
             </p>
-            <a class="button" href="catalog.html">
+            <a class="link button hero-slider__button" href="catalog.html">
               Заказать
             </a>
           </div>
@@ -255,7 +254,7 @@
               Необычный сладкий десерт с карамельным топпингом и кусочками зефира
               завоюет сердца сладкоежек всех возрастов.
             </p>
-            <a class="button hero-slider__button" href="catalog.html">
+            <a class="link button hero-slider__button" href="catalog.html">
               Заказать
             </a>
           </div>
@@ -356,12 +355,12 @@
             <p class="gifts__text">
               При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a class="button gifts__button" href="catalog.html">
+            <a class="link button gifts__button" href="catalog.html">
               Хочу подарок
             </a>
             <picture class="gifts__img">
               <source type="image/webp" srcset="images/illustrations/gifts-raspberry.webp 1x, images/illustrations/gifts-raspberry@2x.webp 2x">
-              <img src="images/illustrations/gifts-raspberry.png" srcset="images/illustrations/gifts-raspberry@2x.png 2x"
+              <img class="display-block" src="images/illustrations/gifts-raspberry.png" srcset="images/illustrations/gifts-raspberry@2x.png 2x"
               width="219" height="268" alt="" aria-hidden="true">
             </picture>
           </li>
@@ -370,12 +369,12 @@
             <p class="gifts__text">
               При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок совершенно бесплатно.
             </p>
-            <a class="button gifts__button" href="catalog.html">
+            <a class="link button gifts__button" href="catalog.html">
               Хочу подарок
             </a>
             <picture class="gifts__img">
               <source type="image/webp" srcset="images/illustrations/gifts-marshmallow.webp 1x, images/illustrations/gifts-marshmallow@2x.webp 2x">
-              <img src="images/illustrations/gifts-marshmallow.png" srcset="images/illustrations/gifts-marshmallow@2x.png 2x"
+              <img class="display-block" src="images/illustrations/gifts-marshmallow.png" srcset="images/illustrations/gifts-marshmallow@2x.png 2x"
               width="219" height="268" alt="" aria-hidden="true">
             </picture>
           </li>
@@ -386,7 +385,7 @@
         <ul class="products__list list-flex">
           <li class="products__item">
             <article class="product">
-              <a href="#">
+              <a class="link" href="#">
                 <picture>
                   <source type="image/webp" srcset="images/products/raspberry.webp 1x, images/products/raspberry@2x.webp 2x">
                   <img class="product__image" src="images/products/raspberry.jpg" srcset="images/products/raspberry@2x.jpg 2x"
@@ -414,7 +413,7 @@
           </li>
           <li class="products__item">
             <article class="product">
-              <a href="#">
+              <a class="link" href="#">
                 <picture>
                   <source type="image/webp" srcset="images/products/pistachio.webp 1x, images/products/pistachio@2x.webp 2x">
                   <img class="product__image" src="images/products/pistachio.jpg" srcset="images/products/pistachio@2x.jpg 2x"
@@ -442,7 +441,7 @@
           </li>
           <li class="products__item">
             <article class="product">
-              <a href="#">
+              <a class="link" href="#">
                 <picture>
                   <source type="image/webp" srcset="images/products/blueberries.webp 1x, images/products/blueberries@2x.webp 2x">
                   <img class="product__image" src="images/products/blueberries.jpg" srcset="images/products/blueberries@2x.jpg 2x"
@@ -470,7 +469,7 @@
           </li>
           <li class="products__item">
             <article class="product">
-              <a href="#">
+              <a class="link" href="#">
                 <picture>
                   <source type="image/webp" srcset="images/products/bubble-gum.webp 1x, images/products/bubble-gum@2x.webp 2x">
                   <img class="product__image" src="images/products/bubble-gum.jpg" srcset="images/products/bubble-gum@2x.jpg 2x"
@@ -533,7 +532,7 @@
           </picture>
           <div class="blogs-news__content">
             <h2 class="blogs-news__title">Новое в нашем блоге</h2>
-            <a href="#">
+            <a class="link" href="#">
               <h3 class="title-h3 blogs-news__title-new">10 способов сервировки фруктовых щербетов к&nbsp;столу</h3>
             </a>
           </div>
@@ -628,7 +627,7 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Для заказов по телефону:</h3>
-              <a class="contacts__info contacts__info--phone" href="tel:+78128121212">
+              <a class="link contacts__info contacts__info--phone" href="tel:+78128121212">
                 +7 (812) 812-12-12
               </a>
               <span class="note contacts__note">
@@ -636,7 +635,7 @@
               </span>
             </li>
           </ul>
-          <a class="button contacts__button button--color" href="#">
+          <a class="link button contacts__button button--color" href="#">
             Форма обратной связи
           </a>
         </div>
@@ -673,24 +672,24 @@
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="site-nav__list">
           <li class="site-nav__item site-nav__item--decor">
-            <a class="note" href="#">
+            <a class="link note" href="#">
               <b class="for-suppliers">
                 Для поставщиков
               </b>
             </a>
           </li>
           <li class="site-nav__item">
-            <a class="note" href="#">
+            <a class="link note" href="#">
               Наши документы
             </a>
           </li>
           <li class="site-nav__item">
-            <a class="note" href="#">
+            <a class="link note" href="#">
               О производстве
             </a>
           </li>
           <li class="site-nav__item">
-            <a class="note" href="#">
+            <a class="link note" href="#">
               Экологические стандарты
             </a>
           </li>
@@ -698,13 +697,13 @@
       </section>
       <section class="copyright">
         <h2 class="visually-hidden">Копирайт</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
-          <img class="copyright__logo" src="images/pictures/htmlacademy.svg" width="93" height="27" aria-hidden="true"
+        <a class="link copyright__link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
+          <img class="display-block copyright__logo" src="images/pictures/htmlacademy.svg" width="93" height="27" aria-hidden="true"
           alt="Логотип html-academy">
         </a>
         <p class="copyright__note">
           Сделано в
-          <a class="copyright__link-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
+          <a class="link copyright__link-text" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
             .html academy
           </a>
           © 2021

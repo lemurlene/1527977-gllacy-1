@@ -8,11 +8,12 @@
   position: relative;
   border-radius: 8px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-content: center;
 }
 
 .product__image {
+  display: block;
   width: 168px;
   height: 168px;
   border-radius: 50%;

@@ -8,8 +8,8 @@
 
 .hero-slider__content {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-slider__caption {
