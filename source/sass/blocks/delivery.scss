@@ -17,10 +17,22 @@
 .delivery__title {
   text-align: left;
   margin: 0 0 24px;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  color: $basic-extra-dark;
+  max-width: 530px;
 }
 
 .delivery__text {
   margin: 0;
+}
+
+.delivery__form-wrapper {
+  border-radius: 8px;
+  background-color: $basic-extra-light;
+  padding: 40px 40px 42px;
+  box-shadow: 0px 15px 40px 0px rgba($basic-extra-dark, 0.12);
 }
 
 .delivery__form-title {

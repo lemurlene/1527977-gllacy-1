@@ -1,6 +1,11 @@
 .social__list {
   gap: 16px;
   min-width: 104px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .social__button {

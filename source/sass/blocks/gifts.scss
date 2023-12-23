@@ -1,35 +1,53 @@
+.gifts__title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  color: $basic-extra-dark;
+  text-align: center;
+  max-width: 530px;
+  margin: 0 auto 56px;
+}
+
+.gifts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 570px 570px;
+  gap: 30px;
+}
+
 .gifts__item {
   background-color: $special-neutral;
   padding-left: 36px;
   border-radius: 16px;
   display: grid;
   grid-template-columns: 1fr 219px;
-  grid-template-areas:
-    "gifts-caption gifts-img"
-    "gifts-text gifts-img"
-    "gifts-button gifts-img";
 }
 
 .gifts__caption {
   color: $basic-extra-dark;
-  grid-area: gifts-caption;
   margin: 36px 0 28px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .gifts__text {
   color: $basic-extra-dark;
-  grid-area: gifts-text;
   margin: 0 0 28px;
 }
 
 .gifts__button {
-  grid-area: gifts-button;
   margin-bottom: 36px;
   align-self: end;
 }
 
-.gifts__img {
-  grid-area: gifts-img;
+.gifts__picture {
+  grid-column: 2;
+  grid-row: 1 / 4;
   max-width: 100%;
-  align-self: end;
+}
+
+.gifts__picture-img {
+  display: block;
 }

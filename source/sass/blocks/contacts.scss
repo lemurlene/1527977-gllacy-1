@@ -12,6 +12,21 @@
   grid-template-columns: 343px auto;
 }
 
+.contacts__wrapper {
+  border-radius: 8px;
+  background-color: $basic-extra-light;
+  padding: 40px 40px 42px;
+  box-shadow: 0px 8px 16px 0px rgba($basic-extra-dark, 0.12);
+}
+
+.contacts__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .contacts__title {
   font-size: 16px;
   line-height: 22px;
@@ -34,8 +49,13 @@
 .contacts__info--phone {
   display: block;
   margin-bottom: 0;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .contacts__note {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
   margin-bottom: 32px;
 }

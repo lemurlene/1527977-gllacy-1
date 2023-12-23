@@ -28,6 +28,9 @@
   padding: 0 16px;
   border-radius: 18px;
   background-color: rgba($basic-extra-light, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .catalog-form__item {

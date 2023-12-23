@@ -17,6 +17,7 @@
   border-radius: 26px;
   box-shadow: 0px 4px 12px 0px rgba($basic-extra-dark, 0.10);
   cursor: pointer;
+  text-decoration: none;
   border: none;
 
   &:hover {
@@ -104,12 +105,13 @@
 .button--cross {
   width: 16px;
   height: 16px;
+  padding: 12px;
   background-image: url("../images/pictures/cross.svg");
   background-position: center center;
   background-repeat: no-repeat;
-  cursor: pointer;
   background-color: transparent;
-  border: none;
+  outline: transparent;
+  box-shadow: none;
 
   &:hover,
   &:focus {

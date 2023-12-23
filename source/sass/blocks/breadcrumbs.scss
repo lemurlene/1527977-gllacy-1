@@ -1,6 +1,10 @@
 .breadcrumbs {
   gap: 8px;
-  margin-bottom: 16px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 16px;
+  padding: 0;
 }
 
 .breadcrumbs__link {
@@ -8,6 +12,8 @@
   line-height: 20px;
   font-weight: 700;
   color: $basic-extra-dark;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .breadcrumbs__link--current {

@@ -5,6 +5,11 @@
 }
 
 .catalog__part-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  color: $basic-extra-dark;
   text-align: start;
+  max-width: 530px;
   margin: auto 0;
 }

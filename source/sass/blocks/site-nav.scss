@@ -8,10 +8,6 @@
   row-gap: 8px;
 }
 
-.site-nav a {
-  color: inherit;
-}
-
 .site-nav__item {
   padding-left: 24px;
 }
@@ -30,4 +26,13 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
 }

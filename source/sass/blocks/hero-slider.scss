@@ -7,9 +7,13 @@
 }
 
 .hero-slider__content {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero-slider__content--current {
+  display: flex;
 }
 
 .hero-slider__caption {

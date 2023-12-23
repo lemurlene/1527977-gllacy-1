@@ -12,6 +12,14 @@
   align-content: center;
 }
 
+.product__link {
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .product__image {
   display: block;
   width: 168px;
@@ -24,7 +32,11 @@
 }
 
 .product__caption {
-  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic-extra-dark;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .product__text {
@@ -37,6 +49,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.product__price {
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic-extra-dark;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .product__button {

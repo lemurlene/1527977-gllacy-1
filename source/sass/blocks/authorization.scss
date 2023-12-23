@@ -1,5 +1,6 @@
 .authorization__popover {
   width: 420px;
+  box-shadow: 0px 15px 40px 0px rgba($basic-extra-dark, 0.12);
 }
 
 .authorization__form {
@@ -26,7 +27,11 @@
 }
 
 .authorization__help-link {
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
   text-decoration: underline solid $basic-extra-dark;
   padding: 2px 4px;
+  color: inherit;
   cursor: pointer;
 }
