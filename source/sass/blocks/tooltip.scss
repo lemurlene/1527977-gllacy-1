@@ -35,13 +35,13 @@
   box-shadow: 0 2px 12px rgba($shadow-middle, 0.18);
 
   &::before {
-    content:'';
-    position:absolute;
+    content: "";
+    position: absolute;
     width: 10px;
     height: 10px;
     left: -11px;
     top: 18px;
-    transform: translate(50%,-50%) rotate(-45deg);
+    transform: translate(50%, -50%) rotate(-45deg);
     background-color: $white;
     border-top: 1px solid $basic-neutral;
     border-left: 1px solid $basic-neutral;

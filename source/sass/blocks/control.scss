@@ -1,4 +1,4 @@
-.control{
+.control {
   position: relative;
 }
 
@@ -40,9 +40,11 @@
   &::before {
     background-image: url("../images/pictures/radio.svg");
   }
+
   &:checked::before {
-  background-image: url("../images/pictures/radio-checked.svg");
+    background-image: url("../images/pictures/radio-checked.svg");
   }
+
   &:disabled::before {
     opacity: 0.4;
   }
@@ -50,11 +52,11 @@
 
 .control__input--checkbox {
   &::before {
-  background-image: url("../images/pictures/checkbox.svg");
+    background-image: url("../images/pictures/checkbox.svg");
   }
 
   &:checked::before {
-  background-image: url("../images/pictures/checkbox-checked.svg");
+    background-image: url("../images/pictures/checkbox-checked.svg");
   }
 
   &:disabled::before {

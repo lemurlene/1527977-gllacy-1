@@ -95,10 +95,12 @@
   &:hover {
     background-color: rgba($special-bright, 0.6);
   }
+
   &:focus {
     background-color: $special-bright;
     outline: solid 2px $black;
   }
+
   &:active {
     background-color: rgba($special-bright, 0.3);
     outline: transparent;

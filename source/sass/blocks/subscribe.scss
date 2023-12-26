@@ -1,22 +1,26 @@
 .subscribe {
-  background: repeating-linear-gradient(
-    -50deg,
-    $additional-light, $additional-light 6px,
-    $special-theme-2 7px, $special-theme-2 14px,
-    $additional-light 15px, $additional-light 29px,
-    $special-extra-bright 30px, $special-extra-bright 37px,
-    $additional-light 38px, $additional-light 45px
-    );
-    padding: 6px;
-    border-radius: 16px;
-    margin-bottom: auto;
-    min-height: 224px;
+  background:
+    repeating-linear-gradient(-50deg,
+    $additional-light,
+    $additional-light 6px,
+    $special-theme-2 7px,
+    $special-theme-2 14px,
+    $additional-light 15px,
+    $additional-light 29px,
+    $special-extra-bright 30px,
+    $special-extra-bright 37px,
+    $additional-light 38px,
+    $additional-light 45px);
+  padding: 6px;
+  border-radius: 16px;
+  margin-bottom: auto;
+  min-height: 224px;
 }
 
 .subscribe__container {
   padding: 26px;
   border-radius: 16px;
-  background-color: white;
+  background-color: $white;
 }
 
 .subscribe__text {

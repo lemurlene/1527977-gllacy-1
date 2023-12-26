@@ -40,7 +40,7 @@
 
 .hero-slider__img {
   position: relative;
-  transform: scale(0.327);
+  transform: scale(0.33);
   opacity: 0.4;
   display: flex;
   width: 100px;
@@ -54,7 +54,7 @@
 }
 
 .hero-slider__img::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
