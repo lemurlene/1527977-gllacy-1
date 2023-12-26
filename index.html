@@ -16,7 +16,7 @@
   </head>
   <body class="page-body page-wrapper">
     <header class="page-header">
-      <a class="page-header__logo page-header__logo--disabled" href="" aria-current="page">
+      <a class="page-header__logo page-header__logo--disabled" href="#" aria-current="page">
         <img class="page-header__logo-img" src="images/pictures/gllacy.svg" width="137" height="56" aria-hidden="true"
         alt="Логотип Глейси">
       </a>
@@ -33,27 +33,27 @@
               <div class="popover__content">
                 <ul class="subcatalog__list">
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link subcatalog__link--hero">
+                    <a class="subcatalog__link subcatalog__link--hero" href="#">
                       Новинки
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Сливочное
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Щербеты
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Фруктовый лед
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Мелорин
                     </a>
                   </li>
@@ -89,13 +89,17 @@
               <div class="popover__content">
                 <h2 class="visually-hidden">Поиск по сайту</h2>
                 <form class="form search__form" role="search" method="post" action="https://echo.htmlacademy.ru/">
-                    <label class="visually-hidden" for="search-main">
-                      Поиск по сайту
-                    </label>
-                    <input class="form__input search__form-input" type="search" name="search-main"
-                    id="search-main"  placeholder="Поиск по сайту" required>
-                    <button class="button button--cross search__button-reset" type="reset"></button>
-                </form>
+                  <label class="visually-hidden" for="search-main">
+                    Поиск по сайту
+                  </label>
+                  <input class="form__input search__form-input" type="search" name="search-main"
+                  id="search-main"  placeholder="Поиск по сайту" required>
+                  <button class="button button--cross search__button-reset" type="reset">
+                    <span class="visually-hidden">
+                      Удалить запрос
+                    </span>
+                  </button>
+              </form>
               </div>
             </div>
           </li>
@@ -128,8 +132,8 @@
                     Войти
                   </button>
                   <div class="authorization__help">
-                    <a class="authorization__help-link" href="">Забыли пароль?</a>
-                    <a class="authorization__help-link" href="">Регистрация</a>
+                    <a class="authorization__help-link" href="#">Забыли пароль?</a>
+                    <a class="authorization__help-link" href="#">Регистрация</a>
                   </div>
                 </form>
               </div>
@@ -156,20 +160,20 @@
                       <img class="cart__item-photo" src="images/products/raspberry-cart.jpg" srcset="images/products/raspberry-cart@2x.jpg 2x"
                       width="46" height="46" alt="Шарик малинового цвета">
                     </picture>
-                    <a class="cart__item-info">
+                    <a class="cart__item-info" href="#">
                       <h3 class="cart__item-title">Малинка</h3>
                       <p class="cart__item-calculation">
                         <span class="cart__item-quantity">1</span>
-                        <span> кг х </span>
+                        <span>&nbsp;кг&nbsp;х&nbsp;</span>
                         <span class="cart__item-price">310</span>
-                        <span> ₽</span>
+                        <span>&nbsp;₽</span>
                       </p>
                     </a>
                     <b class="cart__item-amount">
                       310
-                      <span> ₽</span>
+                      <span>&nbsp;₽</span>
                     </b>
-                    <button type="button" class="button button--cross">
+                    <button class="button button--cross" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
@@ -179,25 +183,25 @@
                       <img class="cart__item-photo" src="images/products/bubble-gum-cart.jpg" srcset="images/products/bubble-gum-cart@2x.jpg 2x"
                       width="46" height="46" alt="Шарик бирюзового цвета с разноцветными горошинками">
                     </picture>
-                    <a class="cart__item-info">
+                    <a class="cart__item-info" href="#">
                       <h3 class="cart__item-title">Бабл-гам</h3>
                       <p class="cart__item-calculation">
                         <span class="cart__item-quantity">1,5</span>
-                        <span> кг х </span>
+                        <span>&nbsp;кг&nbsp;х&nbsp;</span>
                         <span class="cart__item-price">320</span>
-                        <span> ₽</span>
+                        <span>&nbsp;₽</span>
                       </p>
                     </a>
                     <b class="cart__item-amount">
                       480
-                      <span> ₽</span>
+                      <span>&nbsp;₽</span>
                     </b>
-                    <button type="button" class="button button--cross">
+                    <button class="button button--cross" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
                 </ul>
-                <button type="button" class="button button--color">Оформить заказ</button>
+                <button class="button button--color" type="button">Оформить заказ</button>
                 <div class="cart__total">
                   <span>Итого:&nbsp;</span>
                   <span class="cart__total-price">
@@ -567,7 +571,11 @@
                 Дата
               </label>
               <span class="tooltip">
-                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-delivery-date"></button>
+                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-delivery-date">
+                  <span class="visually-hidden">
+                    Инструкция.
+                  </span>
+                </button>
                 <span class="tooltip__text" role="tooltip" id="tooltip-delivery-date">
                   Введите дату:<br>
                   день, месяц и год
@@ -588,7 +596,11 @@
                 Адрес
               </label>
               <span class="tooltip">
-                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-delivery-address"></button>
+                <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-delivery-address">
+                  <span class="visually-hidden">
+                    Инструкция.
+                  </span>
+                </button>
                 <span class="tooltip__text" role="tooltip" id="tooltip-delivery-address">
                   Введите название<br>
                   улицы, дома и квартиры
