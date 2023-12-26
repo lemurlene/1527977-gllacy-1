@@ -1,7 +1,7 @@
 .main-nav {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 160px 268px;
+  grid-template-columns: 1fr 160px auto;
   align-items: center;
   color: $basic-extra-dark;
   gap: 10px;
