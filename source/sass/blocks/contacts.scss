@@ -7,6 +7,8 @@
     background-image: url("../images/background/contacts@2x.jpg");
   }
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: $additional-special-light;
   display: grid;
   grid-template-columns: 343px auto;
